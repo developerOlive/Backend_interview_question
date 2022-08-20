@@ -43,4 +43,34 @@ A클라이언트는 B서버에게 ACK을 보내고 이후로부터는 연결이 
 이때의 B서버 상태가 ESTABLISHED 입니다.
 </div>
 </details>
+  
+  
+<details>
+<summary> TCP의 4-way Handshaking의 역할과 과정에 대해서 말해주세요. </summary>
+<div markdown="1">  
+<br>
+4-way Handshaking은 세션을 종료하기 위해 수행되는 절차입니다.<br>
+
+![image](https://user-images.githubusercontent.com/67456294/185749379-f26f220e-809a-4e46-815f-438438d142d0.png)
+
+TCP의 4-way Handshaking 과정은 다음과 같습니다. <br><br>
+[STEP 1]<br>
+클라이언트가 연결을 종료하겠다는 FIN플래그를 전송합니다.<br>
+
+[STEP 2]<br>
+서버는 일단 확인메시지를 보내고 자신의 통신이 끝날때까지 기다리는데 이 상태가 CLOSE_WAIT상태입니다.<br>
+
+[STEP 3]<br>
+서버가 통신이 끝났으면 연결이 종료되었다고 클라이언트에게 FIN플래그를 전송합니다.<br>
+
+[STEP 4]<br>
+클라이언트는 확인했다는 메시지를 보냅니다.<br>
+TIME_WAIT Client는 Server로부터 FIN을 수신하더라도 일정시간(디폴트 240초) 동안 세션을 남겨놓고<br>
+잉여 패킷을 기다리는 과정을 거치게 되는데 이 과정을 “TIME_WAIT” 라고 합니다. <br>
+Server에서 FIN을 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 <br>
+FIN패킷보다 늦게 도착하는 상황이 발생한다면 Client가 이미 세션을 종료한 후라서 이 패킷들이 Drop되거나 데이터는 유실되지 않도록 합니다.
+
+</div>
+</details>
+
 
