@@ -6,6 +6,11 @@
 <summary>TCP와 UDP의 차이점에 대해서 말해주세요. </summary>
 <div markdown="1">  
 <br>
+
+![image](https://user-images.githubusercontent.com/67456294/185793406-cb3f0b74-5235-4e61-ae1a-9f1e084c8df2.png)
+
+![image](https://user-images.githubusercontent.com/67456294/185793419-df382525-a5d8-4008-a9cb-2b6cf73e36b8.png)
+
   
 TCP와 UDP는 둘 다 전송 계층에서 데이터를 보내기 위해 사용하는 프로토콜 입니다.  
 TCP는 연결형 서비스로 가상 회선 방식을 제공하고, 높은 신뢰성을 보장하며 흐름 제어 및 혼잡 제어 기능을 제공합니다.  
