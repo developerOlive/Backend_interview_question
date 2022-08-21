@@ -45,6 +45,7 @@ A클라이언트는 B서버에게 ACK을 보내고 이후로부터는 연결이 
 </details>
   
   
+  
 <details>
 <summary> TCP의 4-way Handshaking의 역할과 과정에 대해서 말해주세요. </summary>
 <div markdown="1">  
@@ -70,6 +71,19 @@ TIME_WAIT Client는 Server로부터 FIN을 수신하더라도 일정시간(디�
 Server에서 FIN을 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 <br>
 FIN패킷보다 늦게 도착하는 상황이 발생한다면 Client가 이미 세션을 종료한 후라서 이 패킷들이 Drop되거나 데이터는 유실되지 않도록 합니다.
 
+</div>
+</details>
+
+
+
+
+<details>
+<summary> HTTP와 HTTPS의 차이점에 대해서 말해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+HTTP는 따로 암호화 과정을 거치지 않기 때문에 중간에 외부에서 패킷을 가로채거나 수정할 수 있어 보안에 취약합니다. <br>
+이를 보완하기 위해 나온 것이 HTTPS입니다. 중간에 암호화 계층을 거쳐서 패킷을 암호화합니다.
 </div>
 </details>
 
