@@ -129,6 +129,20 @@ NOSQL은 RDBMS에 비해 자유로운 형태로 데이터를 저장합니다. <b
 
 
 <details>
+<summary> ACID에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 성질입니다. <br><br> 
+Atomicity(원자성): 트랜잭션의 연산은 모든 연산이 완벽히 수행되어야 하며, 한 연산이라도 실패하면 트랜잭션은 실패해야 합니다.<br>
+Consistency(일관성): 트랜잭션은 유효한 상태로만 변경될 수 있습니다.<br>
+Isolation(고립성): 트랜잭션은 동시에 실행될 경우 다른 트랜잭션에 의해 영향을 받지 않고 독립적으로 실행되어야 합니다.<br>
+Durability(내구성): 트랜잭션이 커밋된 이후에는 시스템 오류가 발생하더라도 커밋된 상태로 유지되는 것을 보장해야 합니다. <br>
+
+</div>
+</details>
+
+
+<details>
 <summary> Redis에 대해서 간단히 설명해주세요. </summary>
 <div markdown="1">  
 <br>
