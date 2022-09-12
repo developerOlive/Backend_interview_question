@@ -213,3 +213,14 @@ Java의 실행방식
 
 </div>
 </details>
+
+
+<details>
+<summary> 컬렉션 프레임워크에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+Java Collection은 널리 알려져 있는 자료구조를 바탕으로 <br> 
+객체, 데이터들을 효율적으로 관리 할 수 있는 자료구조들이 있는 라이브러리를 컬렉션 프레임워크라고 합니다. <br>
+List, Set은 Collection 인터페이스을 상속받지만, Map 인터페이스는 구조상의 차이라 별도로 정의합니다.
+</div>
+</details>
