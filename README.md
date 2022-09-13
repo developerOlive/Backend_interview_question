@@ -224,3 +224,14 @@ Java Collection은 널리 알려져 있는 자료구조를 바탕으로 <br>
 List, Set은 Collection 인터페이스을 상속받지만, Map 인터페이스는 구조상의 차이라 별도로 정의합니다.
 </div>
 </details>
+
+
+<details>
+<summary> 제네릭에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+제네릭은 자바의 타입 안정성을 맡고 있습니다. <br>
+컴파일 과정에서 타입체크를 해주는 기능으로 객체의 타입을 컴파일 시에 체크하기 때문에 <br> 
+객체의 타입 안정성을 높이고 형변환의 번거로움을 줄여줍니다. 
+</div>
+</details>
