@@ -243,11 +243,23 @@ List, Set은 Collection 인터페이스을 상속받지만, Map 인터페이스�
 
 
 <details>
-<summary> Bean 생명주기에 대해서 설명해주세요. </summary>
+<summary> Bean에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
 - 컨테이너 안에 들어있는 객체 <br>
 - 컨테이너에 담겨있으며, 필요할 때 컨테이너에서 가져와서 사용 <br>
 - @Bean 을 사용하거나 xml 설정을 통해 일반 객체를 Bean으로 등록할 수 있고, Bean으로 등록된 객체는 쉽게 주입하여 사용 가능 <br>
+</div>
+</details>
+
+
+<details>
+<summary> Bean 생명주기에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+- 객체 생성 -> 의존 설정 -> 초기화 -> 사용 -> 소멸
+- 스프링 컨테이너에 의해 생명주기 관리
+- 스프링 컨테이너 초기화 시 빈 객체 생성, 의존 객체 주입 및 초기화
+- 스프링 컨테이너 종료 시 빈 객체 소멸
 </div>
 </details>
