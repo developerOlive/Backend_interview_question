@@ -342,3 +342,42 @@ IoC의 개념이 적용되었나의 차이르 의미합니다. <br>
 </details>
 
 
+<details>
+<summary> AP{에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+
+- AOP(Aspect Oriented Programming)란 <br>
+  - Aspect Oriented Programming, 관점 지향 프로그래밍 <br>
+  - 어떤 로직을 기준으로 핵심 관점과 부가 관점을 나누고, 관점을 기준으로 모듈화하는 것 <br>
+  - 핵심 관점은 주로 핵심 비즈니스 로직 <br> 
+  - 부가 관점은 핵심 로직을 실행하기 위한 데이터베이스 연결, 로깅, 파일 입출력 등 <br><br>
+
+- AOP 목적 <br>
+  - 소스 코드에서 여러 번 반복해서 쓰는 코드(= 흩어진 관심사, Concern)를 Aspect로 모듈화하여 핵심 로직에서 분리 및 재사용  <br>
+  - 개발자가 핵심 로직에 집중할 수 있게 하기 위함 <br>
+  - 주로 부가 기능을 모듈화 <br><br>
+      
+- AOP 주요 용어 <br>
+  - Aspec <br>
+    - 흩어진 관심사를 모듈화 한 것 <br>
+    - Advice + PointCut <br>
+  - Target <br>
+    - Aspect를 적용하는 곳(클래스, 메소드 등) <br>
+  - Advice <br>
+    - 실질적으로 수행해야 하는 기능을 담은 구현체 <br>
+    - Advice + PointCut <br>
+  - JoinPoint <br>
+    - Advice가 적용될 위치 <br>
+    - 끼어들 수 있는 지점 <br>
+    - ex. 메소드 진입 시, 생성자 호출 시, 필드에서 값 꺼낼 때 등 <br>
+  - PointCut <br>
+    - JoinPoint의 상세 스펙 정의 <br>
+    - 더욱 구체적으로 Advice가 실행될 지점 지정 <br>
+  - Weaving <br>
+    - PointCut에 의해 결정된 Target의 JoinPoint에 Advice를 삽입하는 과정 <br>
+    
+</div>
+</details>
+
+
