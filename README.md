@@ -343,7 +343,7 @@ IoC의 개념이 적용되었나의 차이르 의미합니다. <br>
 
 
 <details>
-<summary> AP{에 대해서 설명해주세요. </summary>
+<summary> AOP에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
 
