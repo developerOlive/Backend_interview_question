@@ -3,7 +3,7 @@
 ## [ CS 관련 내용 ]  
 
 <details>
-<summary>TCP와 UDP의 차이점에 대해서 말해주세요. </summary>
+<summary>TCP와 UDP의 차이점에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
 
