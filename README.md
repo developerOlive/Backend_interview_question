@@ -294,6 +294,30 @@ Java의 실행방식
 
 
 
+<details>
+<summary> java의 데이터 타입에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+1. 기본 데이터 타입(Primitive Data Type) <br>
+- 기본 타입의 종류는 byte, short, char, int, float, double, boolean이 있다. <br>
+  -- 정수형 : byte, short, int, long <br>
+  -- 실수형 : float, double <br>
+  -- 논리형 : boolean(ture/false) <br>
+  -- 문자형 : char <br>
+- 기본 타입의 크기가 작고 고정적이기 때문에 메모리의 Stack 영역에 저장된다. <br><br>
+2. 참조 타입(Reference Data Type) <br>
+- 참조 타입의 종류는 class, array, interface, Enumeration이 있다. <br>
+    -- 기본형을 제외하고는 모두 참조형이다. <br>
+    -- new 키워드를 이용하여 객체를 생성하여 데이터가 생성된 주소를 참조하는 타입이다. <br>
+    -- String, StringBuffer, List, 개인이 만든 클래스 등 <br>
+    -- String과 배열은 참조 타입과 달리 new 없이 생성이 가능하지만 기본 타입이 아닌 참조 타입이다. <br>
+- 참조 타입의 데이터의 크기가 가변적, 동적이기 때문에 동적으로 관리되는 Heap 영역에 저장된다. <br>
+- 더 이상 참조하는 변수가 없을 때 가비지 컬렉션에 의해 파괴된다. <br>
+- 참조 타입은 값이 저장된 곳의 주소를 저장하는 공간으로 객체의 주소를 저장한다. (Call-By-Value) <br>
+</div>
+</details>
+
+
 --------------------------------------------------------------------------------------------------------
 
 ## [ Spring ] 
