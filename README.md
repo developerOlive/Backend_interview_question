@@ -22,7 +22,7 @@ UDP는 비연결형 서비스로 데이터그램 방식을 제공하고, 패킷�
   
   
 <details>
-<summary>TCP의 3-way Handshaking 역할과 과정을 말해주세요. </summary>
+<summary>TCP의 3-way Handshaking 역할과 과정을명해주세요. </summary>
 <div markdown="1">  
 <br>
 
