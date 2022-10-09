@@ -82,7 +82,7 @@ FIN패킷보다 늦게 도착하는 상황이 발생한다면 Client가 이미 �
 
 
 <details>
-<summary> HTTP와 HTTPS의 차이점에 대해서 말해주세요. </summary>
+<summary> HTTP와 HTTPS의 차이점에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
   
