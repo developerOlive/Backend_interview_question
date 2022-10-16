@@ -94,7 +94,7 @@ HTTP는 따로 암호화 과정을 거치지 않기 때문에 중간에 외부�
 
 
 <details>
-<summary> HTTP의 동작 과정에 대해서 해주세요. </summary>
+<summary> HTTP의 동작 과정에 대해서 명설명해주세요. </summary>
 <div markdown="1">  
 <br>
 
