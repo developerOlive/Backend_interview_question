@@ -52,7 +52,7 @@ A클라이언트는 B서버에게 ACK을 보내고 이후로부터는 연결이 
   
   
 <details>
-<summary> TCP의 4-way Handshaking의 역할과 과정에 대해서 설명해주세요. </summary>
+<summary> TCP의 4-way Handshaking의 역할 및 과정에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
 4-way Handshaking은 세션을 종료하기 위해 수행되는 절차입니다.<br>
