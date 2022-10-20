@@ -144,7 +144,7 @@ Client가 데이터 전송을 마쳤다고 하더라도 Server는 아직 보낼 
 ## [ 데이터 베이스 관련 내용 ]  
 
 <details>
-<summary> RDBMS vs NOSQL에 대해서명설명해주세요. </summary>
+<summary> RDBMS vs NOSQL에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
 
