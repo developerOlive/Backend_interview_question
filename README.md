@@ -188,7 +188,7 @@ Durability(내구성): 트랜잭션이 커밋된 이후에는 시스템 오류�
 
 
 <details>
-<summary> Redis에 대해서 간단히 설명해주세요. </summary>
+<summary> Redis에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
 Redis는 key-value store NOSQL DB입니다. <br>
