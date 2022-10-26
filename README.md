@@ -205,7 +205,7 @@ Redis는 key-value store NOSQL DB입니다. <br>
 
 
 <details>
-<summary> 단방향 암호화에 대해서 간단히 설명해주세요. </summary>
+<summary> 단방향 암호화에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
 
