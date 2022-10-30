@@ -401,6 +401,7 @@ abstract class Shape { // 추상 클래스
 }
 ```
 <br> 
+
 ```java
 /* 추상 클래스의 구현 */
 class Circle extends Shape {
