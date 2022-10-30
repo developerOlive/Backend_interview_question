@@ -376,6 +376,44 @@ Java의 실행방식
 
 
 
+<details>
+<summary> 인터페이스와 추상 클래스의 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+추상 클래스(Abstract Class) <br>
+&nbsp; * 개념: abstract 키워드로 선언된 클래스 <br>
+&nbsp; &nbsp; a. 추상 메서드를 최소 한 개 이상 가지고 abstract로 선언된 클래스 <br>
+&nbsp; &nbsp; &nbsp; -- 최소 한 개의 추상 메서드를 포함하는 경우 반드시 추상 클래스로 선언하여야 한다. <br>
+&nbsp; &nbsp; b. 추상 메서드가 없어도 abstract로 선언한 클래스 <br>
+&nbsp; &nbsp; &nbsp; -- 그러나 추상 메서드가 하나도 없는 경우라도 추상 클래스로 선언할 수 있다. <br> <br>
+&nbsp; * 추상 클래스의 구현 <br>
+&nbsp; &nbsp; -- 서브 클래스에서 슈퍼 클래스의 모든 추상 메서드를 오버라이딩하여 실행가능한 코드로 구현한다. <br> <br>
+&nbsp; * 추상 클래스의 목적 <br>
+&nbsp; &nbsp; -- 객체(인스턴스)를 생성하기 위함이 아니며, 상속을 위한 부모 클래스로 활용하기 위한 것이다. <br>
+&nbsp; &nbsp; -- 여러 클래스들의 공통된 부분을 추상화(추상 메서드) 하여 상속받는 클래스에게 구현을 강제화하기 위한 것이다. <br>
+&nbsp; &nbsp; -- 즉, 추상 클래스의 추상 메서드를 자식 클래스가 구체화하여 그 기능을 확장하는 데 목적이 있다. <br> <br>
+
+```java
+abstract class Shape { // 추상 클래스
+  Shape() {...}
+  void edit() {...}
+  abstract public void draw(); // 추상 메서드
+}
+```
+<br> 
+```java
+/* 추상 클래스의 구현 */
+class Circle extends Shape {
+  public void draw() { System.out.println("Circle"); } // 추상 메서드 (오버라이딩)
+  void show() { System.out.println("동그라미 모양"); }
+}
+```
+</div>
+</details>
+
+
+
+
 --------------------------------------------------------------------------------------------------------
 
 ## [ Spring ] 
