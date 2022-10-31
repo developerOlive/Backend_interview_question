@@ -377,7 +377,7 @@ Java의 실행방식
 
 
 <details>
-<summary> 인터페이스와 추상 클래스의 차이에 대해서 설명해주세요. </summary>
+<summary> 인터페이스와 추상클래스의 차이에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
 추상 클래스(Abstract Class) <br>
@@ -409,6 +409,22 @@ class Circle extends Shape {
   void show() { System.out.println("동그라미 모양"); }
 }
 ```
+
+<br>
+인터페이스(Interface) <br>
+&nbsp; * 개념: 추상 메서드와 상수만을 포함하며, interface 키워드를 사용하여 선언한다. <br>
+&nbsp; &nbsp; - 인터페이스의 구현 <br>
+&nbsp; &nbsp; &nbsp; -- 인터페이스를 상속받고, 추상 메서드를 모두 구현한 클래스를 작성한다. <br>
+&nbsp; &nbsp; &nbsp; -- implements 키워드를 사용하여 구현한다. <br> <br>
+&nbsp; &nbsp; - 인터페이스의 목적 <br>
+&nbsp; &nbsp; &nbsp; -- 상속받을 서브 클래스에게 구현할 메서드들의 원형을 모두 알려주어, 클래스가 자신의 목적에 맞게 메서드를 구현하도록 하는 것이다. <br>
+&nbsp; &nbsp; &nbsp; -- 구현 객체의 같은 동작을 보장하기 위한 목적이 있다. <br>
+&nbsp; &nbsp; &nbsp; -- 즉, 서로 관련이 없는 클래스에서 공통적으로 사용하는 방식이 필요하지만 기능을 각각 구현할 필요가 있는 경우에 사용한다. <br> <br>
+&nbsp; &nbsp; - 인터페이스의 특징 <br>
+&nbsp; &nbsp; &nbsp; a. 인터페이스는 상수 필드와 추상 메서드만으로 구성된다. <br>
+&nbsp; &nbsp; &nbsp; b. 모든 메서드는 추상 메서드로서, abstract public 속성이며 생략 가능하다. <br>
+&nbsp; &nbsp; &nbsp; c. 상수는 public static final 속성이며, 생략하여 선언할 수 있다. <br>
+&nbsp; &nbsp; &nbsp; d. 인터페이스를 상속받아 새로운 인터페이스를 만들 수 있다. <br>
 </div>
 </details>
 
