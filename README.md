@@ -425,6 +425,30 @@ class Circle extends Shape {
 &nbsp; &nbsp; &nbsp; b. 모든 메서드는 추상 메서드로서, abstract public 속성이며 생략 가능하다. <br>
 &nbsp; &nbsp; &nbsp; c. 상수는 public static final 속성이며, 생략하여 선언할 수 있다. <br>
 &nbsp; &nbsp; &nbsp; d. 인터페이스를 상속받아 새로운 인터페이스를 만들 수 있다. <br>
+
+
+```java
+/* 인터페이스의 개념 */
+interface Phone { // 인터페이스
+  int BUTTONS = 20; // 상수 필드 (public static final int BUTTONS = 20;과 동일)
+  void sendCall(); // 추상 메서드 (abstract public void sendCall();과 동일)
+  abstract public void receiveCall(); // 추상 메서드
+}
+```
+
+
+```java
+/* 인터페이스의 구현 */
+class FeaturePhone implements Phone {
+  // Phone의 모든 추상 메서드를 구현한다.
+  public void sendCall() {...}
+  public void receiveCall() {...}
+
+  // 추가적으로 다른 메서드를 작성할 수 있다.
+  public int getButtons() {...}
+}
+```
+
 </div>
 </details>
 
