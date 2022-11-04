@@ -358,6 +358,22 @@ Java의 실행방식
 
 
 <details>
+<summary> 객체지향의 장점(강점)에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+
+객체를 중심으로 프로그래밍하기 때문에, <br>
+- 사람의 관점에서 프로그램을 이해하고 파악하기 쉽다.<br>
+- 강한 응집력(Strong Cohesion)과 약한 결합력(Weak Coupling)을 가진다.<br>
+- 재사용성, 확장성, 융통성이 높다.<br>
+
+이러한 장점 때문에 디버깅과 유지보수가 용이하고 설계과 분석이 비교적 쉽다.<br>
+</div>
+</details>
+
+
+
+<details>
 <summary> OOP의 4가지 특징에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
