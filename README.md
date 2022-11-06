@@ -264,6 +264,12 @@ Java의 실행방식
 <summary> 컬렉션 프레임워크에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
+
+![image](https://user-images.githubusercontent.com/67456294/200197961-c54dc32f-7108-41e8-80c1-470c3cc36623.png)
+
+
+<br>
+
 객체, 데이터들을 효율적으로 관리 할 수 있는 자료구조들이 있는 라이브러리를 컬렉션 프레임워크라고 합니다. <br> <br>
 
 - Map <br>
@@ -280,6 +286,43 @@ Java의 실행방식
     
 </div>
 </details>
+
+
+
+
+<details>
+<summary> java Map 인터페이스 구현체의 종류에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+
+- HashMap <br>
+  - Entry<K,V>의 배열로 저장되며, 배열의 index는 내부 해쉬 함수를 통해 계산된다. <br>
+  - 내부 hash값에 따라서 키순서가 정해지므로 특정 규칙없이 출력된다. <br>
+  - key와 value에 null값을 허용한다. <br>
+  - 비동기 처리 <br>
+  -  시간복잡도: O(1) <br>
+
+- LinkedHashMap <br>
+  - HashMap을 상속받으며, Linked List로 저장된다. <br>
+  - 입력 순서대로 출력된다. <br>
+  - 비동기 처리 <br>
+  - 시간복잡도: O(n) <br>
+- TreeMap <br>
+  - 내부적으로 레드-블랙 트리(Red-Black tree)로 저장된다. <br>
+  - 키값이 기본적으로 오름차순 정렬되어 출력된다. <br>
+  - 키값에 대한 Compartor 구현으로 정렬 방법을 지정할 수 있다. <br>
+  - 시간복잡도: O(logn) <br>
+- ConCurrentHashMap <br>
+  - multiple lock <br>
+  - update할 때만 동기 처리 <br>
+  - key와 value에 null값을 허용하지 않는다. <br>
+- HashTable <br>
+  - single lock <br>
+  - 모든 메서드에 대해 동기 처리 <br>
+  - key와 value에 null값을 허용하지 않는다. <br>
+</div>
+</details>
+
 
 
 <details>
