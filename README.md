@@ -575,11 +575,30 @@ public class Main {
 2. 인스턴스화(Instantiation) <br>
    - 클래스 -> 인스턴스 <br>
     - 분류의 반대 개념. 범주나 개념으로부터 실재하는 객체를 만드는 과정 <br>
-    - 구체적으로 클래스 내의 객체에 대해 특정한 변형을 정의하고, 이름을 붙인 다음, 그것을 물리적인 어떤 장소에 위치시키는 등의 작업을 통해 인스턴스를 만드는 것을 말한다. <br>
+    - 구체적으로 클래스 내의 객체에 대해 특정한 변형을 정의하고, 이름을 붙인 다음, 그것을 물리적인 어떤 장소에 위치시키는 등의 작업을 통해 인스턴스를 만드는 것을 말한다. 
+<br>
+</div>
+</details>
 
 
+<details>
+<summary> java의 main 메서드가 static인 이유에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
 
-  <br>
+- static 키워드 <br>
+  - static 멤버는 클래스 로딩(프로그램 시작) 시 메모리에 로드되어 인스턴스를 생성하지 않아도 호출이 가능하다. <br>
+- main 메서드가 static인 이유 <br>
+  - public static void main(String[] args){...} <br>
+  - 위와 같은 형식은 java에서의 main() 관례이다. 위와 같은 시그니처를 가진 메소드가 없으면 실행되지 않는다. <br>
+  - JVM은 인스턴스가 없는 클래스의 main()을 호출해야하기 때문에 static이어야 한다. <br>
+- JVM과 static <br>
+  - 코드를 실행하면 컴파일러가 .java 코드를 .class(byte code)로 변환한다. <br>
+  - 클래스 로더가 .class파일을 메모리 영역(Runtime Data Area)에 로드한다. <br>
+  - Runtime Data Area 중 Meathod Area(= Class area = Static area)라고 불리는 영역에 Class Variable이 저장되는데, static 변수 또한 여기에 포함된다. <br>
+  - JVM은 Meathod Area에 로드된 main()을 실행한다. <br> <br>
+  ![image](https://user-images.githubusercontent.com/67456294/200429668-8e46e3b1-b53b-4780-8e50-2dc84f4fd698.png)
+
 </div>
 </details>
 
