@@ -346,6 +346,26 @@ Java의 실행방식
 
 
 <details>
+<summary> java Set 인터페이스 구현체의 종류에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- HashSet <br>
+   - 저장 순서를 유지하지 않는 데이터의 집합이다. <br>
+   - 해시 알고리즘(hash algorithm)을 사용하여 검색 속도가 매우 빠르다. <br>
+   - 내부적으로 HashMap 인스턴스를 이용하여 요소를 저장한다. <br>
+- LinkedHashSet <br>
+   - 저장 순서를 유지하는 HashSet <br>
+- TreeSet <br>
+  - 데이터가 정렬된 상태로 저장되는 이진 탐색 트리(binary search tree)의 형태로 요소를 저장한다. <br>
+   - 이진 탐색 트리 중에 성능을 향상시킨 레드-블랙 트리(Red-Black tree)로 구현되어 있다. <br>
+   - Compartor 구현으로 정렬 방법을 지정할 수 있다. <br>
+</div>
+</details>
+
+  
+
+<details>
 <summary> 제네릭에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
