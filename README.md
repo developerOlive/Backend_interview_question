@@ -720,6 +720,56 @@ public class Main {
 </details>
 
 
+
+<details>
+<summary> java에서 ==와 equals()의 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+
+- "==" <br>
+  - 항등 연산자(Operator) 이다. <br>
+    - <--> != <br>
+  - 참조 비교(Reference Comparison) ; (주소 비교, Address Comparison) <br>
+    - 두 객체가 같은 메모리 공간을 가리키는지 확인한다. <br>
+  - 반환 형태: boolean type <br>
+    - 같은 주소면 return true, 다른 주소면 return false <br>
+  - 모든 기본 유형(Primitive Types)에 대해 적용할 수 있다. <br>
+    - byte, short, char, int, float, double, boolean <br><br>
+- "equals()" <br>
+  - 객체 비교 메서드(Method) 이다. <br>
+  - <--> !(s1.equals(s2)); <br>
+  - 내용 비교(Content Comparison) <br>
+    - 두 객체의 값이 같은지 확인한다. <br>
+    - 즉, 문자열의 데이터/내용을 기반으로 비교한다. <br>
+  - 기본 유형(Primitive Types)에 대해서는 적용할 수 없다. <br>
+  - 반환 형태: boolean type <br>
+    - 같은 내용이면 return true, 다른 내용이면 return false <br><br>
+    
+- "==" VS "equals()" 예시
+```java
+public class Test {
+    public static void main(String[] args) {
+        // Thread 객체
+        Thread t1 = new Thread();
+        Thread t2 = new Thread(); // 새로운 객체 생성. 즉, s1과 다른 객체.
+        Thread t3 = t1; // 같은 대상을 가리킨다.
+        // String 객체
+        String s1 = new String("WORLD");
+        String s2 = new String("WORLD");
+        /* --print-- */
+        System.out.println(t1 == t3); // true
+        System.out.println(t1 == t2); // false(서로 다른 객체이므로 별도의 주소를 갖는다.)
+        System.out.println(t1.equals(t2)); // false
+        System.out.println(s1.equals(s2)); // true(모두 "WORLD"라는 동일한 내용을 갖는다.)
+    }
+```
+
+</div>
+</details>
+
+
+
+
 --------------------------------------------------------------------------------------------------------
 
 ## [ Spring ] 
