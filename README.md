@@ -165,14 +165,15 @@ Client가 데이터 전송을 마쳤다고 하더라도 Server는 아직 보낼 
 <summary> RDBMS vs NOSQL에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
-
-DBMS는 데이터베이스를 이루는 객체들의 릴레이션을 통해서 데이터를 저장하는 데이터베이스입니다. <br>
-SQL을 사용해 데이터의 저장, 질의, 수정, 삭제를 할 수 있으며 데이터를 효율적으로 보관하는 것을 목적으로 하고 구조화가 굉장히 중요합니다. <br>
-장점으로는 명확한 데이터 구조를 보장하고, 중복을 피할 수 있습니다. <br>
-
-NOSQL은 RDBMS에 비해 자유로운 형태로 데이터를 저장합니다. <br>
-또한 수평확장을 할 수 있고 분산처리를 지원합니다. <br>
-다양한 형태의 NOSQL 데이터베이스가 있고, 대표적으로 key-value store, bigtable, dynamo, document db, graph db 등이 있습니다. <br>
+  
+- RDBMS <br>
+  - DBMS는 데이터베이스를 이루는 객체들의 릴레이션을 통해서 데이터를 저장하는 데이터베이스입니다. <br>
+  - SQL을 사용해 데이터의 저장, 질의, 수정, 삭제를 할 수 있으며 데이터를 효율적으로 보관하는 것을 목적으로 하고 구조화가 굉장히 중요합니다. <br>
+  - 장점으로는 명확한 데이터 구조를 보장하고, 중복을 피할 수 있습니다. <br> 
+- NOSQL <br>
+  - NOSQL은 RDBMS에 비해 자유로운 형태로 데이터를 저장합니다. <br>
+  - 또한 수평확장을 할 수 있고 분산처리를 지원합니다. <br>
+  - 다양한 형태의 NOSQL 데이터베이스가 있고, 대표적으로 key-value store, bigtable, dynamo, document db, graph db 등이 있습니다. <br>
 
 둘은 대체될 수 있는 것이 아니고, 각각 필요한 시점에 적절히 선택해서 사용해야 합니다. 둘 다 같이쓰는 상호보완적인 존재가 될 수도 있습니다.
 
@@ -250,6 +251,46 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 </div>
 </details>
 
+
+
+<details>
+<summary> 데이터베이스 풀에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- Connection Pool <br>
+  - 클라이언트의 요청에 따라 각 어플리케이션의 스레드에서 데이터베이스에 접근하기 위해서는 Connection이 필요하다. <br>
+  - Connection pool은 이런 Connection을 여러 개 생성해 두어 저장해 놓은 공간(캐시), 또는 이 공간의 Connection을 필요할 때 꺼내 쓰고 반환하는 기법을 말한다. <br>
+  ![image](https://user-images.githubusercontent.com/67456294/202581000-e485f7a6-7181-42d9-89fa-d9dc2fed92cc.png)
+  
+<br>
+  
+- DB에 접근하는 단계 <br>
+  1. 웹 컨테이너가 실행되면서 DB와 연결된 Connection 객체들을 미리 생성하여 pool에 저장한다. <br>
+  2. DB에 요청 시, pool에서 Connection 객체를 가져와 DB에 접근한다. <br>
+  3. 처리가 끝나면 다시 pool에 반환한다. <br>
+  
+  ![image](https://user-images.githubusercontent.com/67456294/202581112-0aaea334-acb2-49d1-9f16-6faacefb3287.png)
+
+  <br>
+  
+- Connction이 부족하면? <br>
+  - 모든 요청이 DB에 접근하고 있고 남은 Conncetion이 없다면, 해당 클라이언트는 대기 상태로 전환시키고 Pool에 Connection이 반환되면 대기 상태에 있는 클라이언트에게 순차적으로 제공된다. <br>
+- 왜 사용할까? <br>
+  - 매 연결마다 Connection 객체를 생성하고 소멸시키는 비용을 줄일 수 있다. <br>
+  - 미리 생성된 Connection 객체를 사용하기 때문에, DB 접근 시간이 단축된다. <br>
+  - DB에 접근하는 Connection의 수를 제한하여, 메모리와 DB에 걸리는 부하를 조정할 수 있다. <br>
+- Thread Pool <br>
+  - 비슷한 맥락으로 Thread pool이라는 개념도 있다. <br>
+  - 이 역시 매 요청마다 요청을 처리할 Thread를 만드는것이 아닌, 미리 생성한 pool 내의 Thread를 소멸시키지 않고 재사용하여 효율적으로 자원을 활용하는 기법. <br>
+- Thread Pool과 Connection pool <br>
+  - WAS에서 Thread pool과 Connection pool내의 Thread와 Connection의 수는 직접적으로 메모리와 관련이 있기 때문에, <br>
+  많이 사용하면 할 수록 메모리를 많이 점유하게 된다. 그렇다고 반대로 메모리를 위해 적게 지정한다면, 서버에서는 많은 요청을 처리하지 못하고 대기 할 수 밖에 없다. <br>
+  - 보통 WAS의 Thread의 수가 Conncetion의 수보다 많은 것이 좋은데, 그 이유는 모든 요청이 DB에 접근하는 작업이 아니기 때문이다. <br>
+  
+  
+</div>
+</details>
 
 
 --------------------------------------------------------------------------------------------------------
