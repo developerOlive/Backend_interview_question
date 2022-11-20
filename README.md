@@ -861,6 +861,7 @@ public class Test {
 </details>
 
 
+
 <details>
 <summary> Bean 생명주기에 대해서 설명해주세요. </summary>
 <div markdown="1">  
@@ -872,6 +873,7 @@ public class Test {
 - 스프링 컨테이너 종료 시 빈 객체 소멸 <br> <br>
 </div>
 </details>
+
 
 
 <details>
@@ -953,6 +955,7 @@ Spring에서의 IoC <br>
 </details>
 
 
+
 <details>
 <summary> AOP에 대해서 설명해주세요. </summary>
 <div markdown="1">  
@@ -991,4 +994,39 @@ Spring에서의 IoC <br>
 </div>
 </details>
 
+
+
+
+<details>
+<summary> Filter와 Interceptor 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- Filter, Interceptor <br>
+  - 애플리케이션에서 자주 사용되는 기능(공통 부분)을 분리하여 관리할 수 있도록 Spring이 제공하는 기능 <br>
+
+- Filter, Interceptor 흐름 <br> <br> 
+![image](https://user-images.githubusercontent.com/67456294/202929031-9a440ce8-01cc-4dfb-aadb-3cf00deadb23.png) <br>
+
+1. 서버 실행 시 Servlet이 올라오는 동안 init 후 doFilter 실행 <br>
+2. Dispatcher Servlet을 지나쳐 Interceptor의 preHandler 실행 <br>
+3. 컨트롤러를 거쳐 내부 로직 수행 후, Interceptor의 postHandler 실행 <br>
+4. doFilter 실행 <br>
+5. Servlet 종료 시 destroy <br><br>
+
+Filter 특징
+- Dispatcher Servlet 이전에 수행되고, 응답 처리에 대해서도 변경 및 조작 수행 가능
+- WAS 내의 ApplicationContext에서 등록된 필터가 실행
+- WAS 구동 시 FilterMap이라는 배열에 등록되고, 실행 시 Filter chain을 구성하여 순차적으로 실행
+- Spring Context 외부에 존재하여 Spring과 무관한 자원에 대해 동작
+- 일반적으로 web.xml에 설정
+- 예외 발생 시 Web Application에서 예외 처리
+- ex. 인코딩 변환, XSS 방어 등
+- 실행 메소드
+  - init() : 필터 인스턴스 초기화
+  - doFilter() : 실제 처리 로직
+  - destroy() : 필터 인스턴스 종료
+
+</div>
+</details>
 
