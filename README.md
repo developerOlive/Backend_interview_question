@@ -1026,6 +1026,18 @@ Filter 특징
   - init() : 필터 인스턴스 초기화
   - doFilter() : 실제 처리 로직
   - destroy() : 필터 인스턴스 종료
+  
+  
+Interceptor 특징
+- Dispatcher Servlet 이후 Controller 호출 전, 후에 끼어들어 기능 수행
+- Spring Context 내부에서 Controller의 요청과 응답에 관여하며 모든 Bean에 접근 가능
+- 일반적으로 servlet-context.xml에 설정
+- 예외 발생 시 @ControllerAdvice에서 @ExceptionHandler를 사용해 예외 처리
+- ex. 로그인 체크, 권한 체크, 로그 확인 등
+- 실행 메소드
+  - preHandler() : Controller 실행 전
+  - postHandler() : Controller 실행 후
+  - afterCompletion() : view Rendering 후
 
 </div>
 </details>
