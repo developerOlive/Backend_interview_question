@@ -1050,3 +1050,21 @@ Filter, Interceptor 차이점 요약 <br>
 </div>
 </details>
 
+
+
+<details>
+<summary> DAO와 DTO의 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- DAO(Data Access Object) <br>
+  - DB의 데이터를 조회하거나 조작하는 기능을 전담하도록 만든 객체를 말한다. <br>
+  - DB에 접근을 하기위한 로직과 비즈니스 로직을 분리하기 위해서 사용 한다. <br>
+- DTO(Data Transfer Object) <br>
+  - 계층간 데이터 교환을 위한 자바빈즈를 말한다. <br>
+    - 여기서 말하는 계층은 Controller, View, Business Layer, Persistent Layer 이다. <br>
+  - 일반적인 DTO는 로직을 갖고 있지 않는 순수한 데이터 객체이며, 속성과 그 속성에 접근하기 위한 getter, setter 메소드만 가진 클래스이다. <br>
+  - VO(Value Object) 라고도 불린다. <br>
+    - DTO와 동일한 개념이지만 read only 속성을 가진다. <br>
+</div>
+</details>
