@@ -1169,8 +1169,41 @@ Filter, Interceptor 차이점 요약 <br>
 </div>
 </details>
 
+  
 
+## [ OS ]  
 
+<details>
+<summary> 프로세스와 스레드의 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- 프로그램(Program) 이란<br>
+  - 사전적 의미: 어떤 작업을 위해 실행할 수 있는 파일<br>
+- 프로세스(Process) 란<br>
+  - 사전적 의미: 컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램<br>
+    - 메모리에 올라와 실행되고 있는 프로그램의 인스턴스(독립적인 개체)<br>
+    - 운영체제로부터 시스템 자원을 할당받는 작업의 단위<br>
+    - 즉, 동적인 개념으로는 실행된 프로그램을 의미한다.<br>
+  - 할당받는 시스템 자원의 예<br>
+    - CPU 시간<br>
+    - 운영되기 위해 필요한 주소 공간<br>
+    - Code, Data, Stack, Heap의 구조로 되어 있는 독립된 메모리 영역<br>
+  - 특징<br>
+  ![image](https://user-images.githubusercontent.com/67456294/204920003-0b40e4f5-35e1-439d-a3a4-b13f8fa6b6aa.png)
+  
+    - 프로세스는 각각 독립된 메모리 영역(Code, Data, Stack, Heap의 구조)을 할당받는다.<br>
+    - 기본적으로 프로세스당 최소 1개의 스레드(메인 스레드)를 가지고 있다.<br>
+    - 각 프로세스는 별도의 주소 공간에서 실행되며, 한 프로세스는 다른 프로세스의 변수나 자료구조에 접근할 수 없다.<br>
+    - 한 프로세스가 다른 프로세스의 자원에 접근하려면 프로세스 간의 통신(IPC, inter-process communication)을 사용해야 한다. <br>
+      - (Ex. 파이프, 파일, 소켓 등을 이용한 통신 방법 이용)<br>
+
+  
+</div>
+</details>
+
+  
+  
 ## [ ETC ]  
 
 <details>
@@ -1186,3 +1219,5 @@ Filter, Interceptor 차이점 요약 <br>
 6. 서버가 요청을 처리하고 응답을 보낸다.
 7. 서버가 HTTP 응답을 보낸다.
 8. 브라우저가 HTML 컨텐츠를 보여준다.
+</div>
+</details>
