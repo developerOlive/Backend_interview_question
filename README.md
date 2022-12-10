@@ -1334,13 +1334,13 @@ Filter, Interceptor 차이점 요약 <br>
 <div markdown="1">  
 <br>
 
-1. 브라우저 주소창에 maps.google.com을 입력한다.
-2. 브라우저가 maps.google.com의 IP 주소를 찾기 위해 캐시에서 DNS 기록을 확인한다.
-3. 만약 요청한 URL(maps.google.com)이 캐시에 없다면, ISP의 DNS 서버가 DNS 쿼리로 maps.google.com을 호스팅하는 서버의 IP 주소를 찾는다.
-4. 브라우저가 해당 서버와 TCP 연결을 시작한다.
-5. 브라우저가 웹서버에 HTTP 요청을 보낸다.
-6. 서버가 요청을 처리하고 응답을 보낸다.
-7. 서버가 HTTP 응답을 보낸다.
-8. 브라우저가 HTML 컨텐츠를 보여준다.
+1. 브라우저 주소창에 maps.google.com을 입력한다. <br>
+2. 브라우저가 maps.google.com의 IP 주소를 찾기 위해 캐시에서 DNS 기록을 확인한다.<br>
+3. 만약 요청한 URL(maps.google.com)이 캐시에 없다면, ISP의 DNS 서버가 DNS 쿼리로 maps.google.com을 호스팅하는 서버의 IP 주소를 찾는다.<br>
+4. 브라우저가 해당 서버와 TCP 연결을 시작한다.<br>
+5. 브라우저가 웹서버에 HTTP 요청을 보낸다.<br>
+6. 서버가 요청을 처리하고 응답을 보낸다.<br>
+7. 서버가 HTTP 응답을 보낸다.<br>
+8. 브라우저가 HTML 컨텐츠를 보여준다. <br>
 </div>
 </details>
