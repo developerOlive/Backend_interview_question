@@ -1325,6 +1325,25 @@ Filter, Interceptor 차이점 요약 <br>
 </details>
 
 
+
+<details>
+<summary> ontext Switching에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- Context Switching이란?<br>
+    - 현재 진행하고 있는 Task(Process, Thread)의 상태를 저장하고 다음 진행할 Task의 상태 값을 읽어 적용하는 과정을 말한다.<br>
+- Context Switching 과정<br>
+    1. Task의 대부분 정보는 Register에 저장되고 PCB(Process Control Block)로 관리된다.<br>
+    2. 현재 실행하고 있는 Task의 PCB 정보를 저장한다. (Process Stack, Ready Queue)<br>
+    3. 다음 실행할 Task의 PCB 정보를 읽어 Register에 적재하고 CPU가 이전에 진행했던 과정을 연속적으로 수행할 수 있다.<br>
+- Context Switching Cost (Process vs Thread)<br>
+    - Process Context Switching 비용 > Thread Context Switching 비용<br>
+    - Thread는 Stack 영역을 제외한 모든 메모리를 공유하므로 Context Switching 수행 시 Stack 영역만 변경하면 되기 때문에 비용이 적게 든다.<br>
+</div>
+</details>
+
+
   
   
 ## [ ETC ]  
