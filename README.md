@@ -1327,7 +1327,7 @@ Filter, Interceptor 차이점 요약 <br>
 
 
 <details>
-<summary> ontext Switching에 대해서 설명해주세요. </summary>
+<summary> Context Switching에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
   
