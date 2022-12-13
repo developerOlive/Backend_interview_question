@@ -948,6 +948,9 @@ public class Test {
 <summary> CheckedException과 UnCheckedException의 차이에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
+  
+  ![image](https://user-images.githubusercontent.com/67456294/207458000-74186bea-6238-4187-98ee-3a763844edc1.png)
+
 
 - Checked Exception
   - 명시적인 예외 처리를 강제하기 때문에 Checked Exception이라 한다.
