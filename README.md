@@ -872,6 +872,7 @@ public class Main {
 </details>
 
 
+
 <details>
 <summary> java의 main 메서드가 static인 이유에 대해서 설명해주세요. </summary>
 <div markdown="1">  
@@ -943,7 +944,27 @@ public class Test {
 
 
 
+<details>
+<summary> CheckedException과 UnCheckedException의 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
 
+- Checked Exception
+  - Checked Exception은 RuntimeException을 상속하지 않은 클래스이며, 명시적인 예외 처리를 해야 한다. 
+  - 컴파일 시점에 확인할 수 있고 트랜잭션 안에서 동작할 때 Checked Exception이 발생하면 롤백되지 않는다는 특징이 있다.
+  
+- Unchecked Exception
+  - Unchecked Exception은 RuntimeException을 상속한 클래스이며, 명시적인 예외 처리를 하지 않는다. 
+  - 런타임 시점에 확인할 수 있고 트랜잭션 안에서 동작할 때 Unchecked Exception이 발생하면 롤백된다는 특징이 있다.
+  
+- 올바른 예외처리 방식?
+  - 예외 복구 전략이 명확하고 복구가 가능하다면 Checked Excetpion을 try-catch로 잡아서 예외를 복구하는 것이 좋다. 
+  - 복구가 불가능한 Checked Exception이 발생하면 더 구체적인 Unchecked Exception을 발생시키고 예외에 대한 메시지를 명확하게 전달하는 것이 좋다. 
+  - 무책임하게 상위 메서드에 throw로 예외를 던지는 것은 상위 메서드의 책임이 증가하기 때문에 좋지 않은 방법이다.
+
+
+</div>
+</details>
 --------------------------------------------------------------------------------------------------------
 
 ## [ Spring ] 
