@@ -950,10 +950,14 @@ public class Test {
 <br>
 
 - Checked Exception
+  - 명시적인 예외 처리를 강제하기 때문에 Checked Exception이라 한다.
+  - 반드시 try ~ catch로 예외를 잡거나 throw로 호출한 메소드에게 예외를 던져야 한다.
   - Checked Exception은 RuntimeException을 상속하지 않은 클래스이며, 명시적인 예외 처리를 해야 한다. 
   - 컴파일 시점에 확인할 수 있고 트랜잭션 안에서 동작할 때 Checked Exception이 발생하면 롤백되지 않는다는 특징이 있다.
   
 - Unchecked Exception
+  - 명시적인 예외 처리를 강제하지 않기 때문에 Uncheked Exception이라고 한다. 
+  - 명시적인 예외 처리란 try ~ catch로 예외를 잡거나 throw로 호출한 메소드에게 예외를 던지지 않는 행위를 말한다.
   - Unchecked Exception은 RuntimeException을 상속한 클래스이며, 명시적인 예외 처리를 하지 않는다. 
   - 런타임 시점에 확인할 수 있고 트랜잭션 안에서 동작할 때 Unchecked Exception이 발생하면 롤백된다는 특징이 있다.
   
