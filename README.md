@@ -969,9 +969,43 @@ public class Test {
   - 복구가 불가능한 Checked Exception이 발생하면 더 구체적인 Unchecked Exception을 발생시키고 예외에 대한 메시지를 명확하게 전달하는 것이 좋다. 
   - 무책임하게 상위 메서드에 throw로 예외를 던지는 것은 상위 메서드의 책임이 증가하기 때문에 좋지 않은 방법이다.
 
-
 </div>
 </details>
+
+
+
+<details>
+<summary> String vs StringBuffer vs StringBuilder 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+
+- String<br>
+    - immutable(불변)<br>
+    - 객체를 한 번 할당할 때 메모리 공간에 변동이 없다.(할당 시 Heap String Pool영역에 생성되어 그 값을 계속 사용한다.)<br>
+    - 동기화를 신경쓰지 않아도 된다.<br>
+    - 엄청나게 많은 문자열을 선언 및 연산할 떄는 성능저하를 고려해야 한다.<br>
+    
+- StringBuffer<br>
+    - mutable(가변)<br>
+    - 각 메서드별로 Synchronized Keyword가 존재한다.<br>
+    - 멀티스레드 환경에서도 동기화를 지원한다.(thread-safe)<br>
+
+- StringBuilder<br>
+    - mutable(가변)<br>
+    - 동기화를 지원하지 않는다. <br><br>
+
+
+<정리><br>
+- String은 짧은 문자열을 더할 경우 사용한다.<br>
+- StringBuffer는 스레드에 안전한 프로그램이 필요할 때나, 개발 중인 시스템의 부분이 스레드에 안전한지 모를 경우 사용하면 좋다.<br>
+- StringBuilder는 스레드에 안전한지 여부가 전혀 관계 없는 프로그램을 개발할 때 사용하면 좋다. <br>
+- 멀티스레드 환경이라면 값 동기화 보장을 위해 StringBuffer를 사용하고,<br>
+  단일스레드 환경이라면 StringBuilder를 사용하는 것이 좋다.<br>
+- 단순히 성능만 놓고 본다면 연산이 많은 경우, StringBuilder > StringBuffer >>> String 이다.<br>
+</div>
+</details>
+
+
 --------------------------------------------------------------------------------------------------------
 
 ## [ Spring ] 
@@ -1197,7 +1231,9 @@ Filter, Interceptor 차이점 요약 <br>
 </div>
 </details>
 
-  
+
+--------------------------------------------------------------------------------------------------------
+
 
 ## [ OS ]  
 
@@ -1372,6 +1408,7 @@ Filter, Interceptor 차이점 요약 <br>
 </details>
 
 
+--------------------------------------------------------------------------------------------------------
   
   
 ## [ ETC ]  
