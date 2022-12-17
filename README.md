@@ -1025,6 +1025,22 @@ public class Test {
 </details>
 
 
+
+<details>
+<summary> new String()과 “”의 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+
+- Java에서 문자열은 Heap 영역 내의 String Pool이라는 곳에서 따로 관리하게 된다.
+- "" 으로 선언된 String은 String Pool에 추가가 되고 해당 값을 참조 값으로 가지게 된다.
+- 반면 new String()으로 생성된 String은 String Pool이 아닌 Heap 영역에 새로운 객체를 등록하게 된다.
+- 즉, 위 두 방법으로 객체를 생성하였을 경우 각 객체의 메모리상의 위치가 다르다.
+
+</div>
+</details>
+
+
+
 --------------------------------------------------------------------------------------------------------
 
 ## [ Spring ] 
