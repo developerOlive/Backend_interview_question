@@ -1527,6 +1527,10 @@ Filter, Interceptor 차이점 요약 <br>
 - 즉시로딩 : 엔티티를 조회할 때, 연관된 엔티티도 함께 조회한다.<br>
 (Question을 조회할 때, List 도 조회)<br>
 
+
+- 지연로딩 : 연관된 엔티티를 실제 사용할 때 조회한다.<br>
+(Quesion을 조회할 때, List도 사용한다면 그 때만 조회)<br>
+
 </div>
 </details>
 
