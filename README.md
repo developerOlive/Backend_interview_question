@@ -1062,7 +1062,10 @@ public class Test {
 <br>
 
 1.SRP(Single Responsibility Principle) : 단일 책임 원칙 <br>
-클래스는 단 하나의 책임을 가져야 하며 클래스를 변경하는 이유는 단 하나의 이유이어야 합니다. <br>
+클래스는 단 하나의 책임을 가져야 하며 클래스를 변경하는 이유는 단 하나의 이유여야 합니다. <br>
+<br>
+2. OCP(Open-Closed Principle) : 개방-폐쇄 원칙 <br>
+확장에는 열려 있어야 하고 변경에는 닫혀 있어야 합니다.
 
 </div>
 </details>
