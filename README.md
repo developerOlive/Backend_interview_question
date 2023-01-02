@@ -1065,7 +1065,10 @@ public class Test {
 클래스는 단 하나의 책임을 가져야 하며 클래스를 변경하는 이유는 단 하나의 이유여야 합니다. <br>
 <br>
 2. OCP(Open-Closed Principle) : 개방-폐쇄 원칙 <br>
-확장에는 열려 있어야 하고 변경에는 닫혀 있어야 합니다.
+확장에는 열려 있어야 하고 변경에는 닫혀 있어야 합니다.<br>
+<br>
+3. LSP(Liskov Substitution Principle) : 리스코프 치환 원칙<br>
+상위 타입의 객체를 하위 타입의 객체로 치환해도 상위 타입을 사용하는 프로그램은 정상적으로 동작해야 합니다.<br>
 
 </div>
 </details>
