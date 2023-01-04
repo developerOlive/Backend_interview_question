@@ -1070,8 +1070,11 @@ public class Test {
 3. LSP(Liskov Substitution Principle) : 리스코프 치환 원칙<br>
 상위 타입의 객체를 하위 타입의 객체로 치환해도 상위 타입을 사용하는 프로그램은 정상적으로 동작해야 합니다.<br>
 <br>
-4.ISP(Interface Segregation Principle) : 인터페이스 분리 원칙 <br>
+4. ISP(Interface Segregation Principle) : 인터페이스 분리 원칙 <br>
 인터페이스는 그 인터페이스를 사용하는 클라이언트를 기준으로 분리해야 합니다. <br>
+<br>
+5. DIP(Dependency Inversion Principle) : 의존 역전 원칙<br>
+고수준 모듈은 저수준 모듈의 구현에 의존해서는 안됩니다.<br>
 
 </div>
 </details>
