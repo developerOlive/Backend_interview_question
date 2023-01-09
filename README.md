@@ -1119,7 +1119,7 @@ public class Test {
 
 
 <details>
-<summary> 스프링에서 빈(Bean)을 등록하는 방법에 대해서 설명해주세요. </summary>
+<summary> Bean을 등록하는 방법에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
   
@@ -1140,9 +1140,10 @@ public class Test {
 <div markdown="1">  
 <br>
   
-- 객체 생성 -> 의존 설정 -> 초기화 -> 사용 -> 소멸 <br>
+- 스프링 IoC 컨테이너 생성 → 스프링 빈 생성 → 의존관계 주입 → 초기화 콜백 메소드 호출 →  사용 → 소멸 전 콜백 메소드 호출 → 스프링 종료  <br>
+<br>
+
 - 스프링 컨테이너에 의해 생명주기 관리 <br>
-- 스프링 컨테이너 초기화 시 빈 객체 생성, 의존 객체 주입 및 초기화 <br>
 - 스프링 컨테이너 종료 시 빈 객체 소멸 <br> <br>
 </div>
 </details>
