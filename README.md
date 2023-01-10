@@ -1271,7 +1271,6 @@ Spring에서의 IoC <br>
 
 
 
-
 <details>
 <summary> Filter와 Interceptor 차이에 대해서 설명해주세요. </summary>
 <div markdown="1">  
@@ -1341,6 +1340,19 @@ Filter, Interceptor 차이점 요약 <br>
   - 일반적인 DTO는 로직을 갖고 있지 않는 순수한 데이터 객체이며, 속성과 그 속성에 접근하기 위한 getter, setter 메소드만 가진 클래스이다. <br>
   - VO(Value Object) 라고도 불린다. <br>
     - DTO와 동일한 개념이지만 read only 속성을 가진다. <br>
+</div>
+</details>
+
+
+
+<details>
+<summary> @Transactional의 동작 원리에 대해 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- @Transactional을 메소드 또는 클래스에 명시하면, <br>
+  AOP를 통해 Target이 상속하고 있는 인터페이스 또는 Target 객체를 상속한 Proxy 객체가 생성되며, <br>
+  Proxy 객체의 메소드를 호출하면 Target 메소드 전 후로 트랜잭션 처리를 수행합니다. <br>
 </div>
 </details>
 
