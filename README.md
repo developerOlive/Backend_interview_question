@@ -1376,6 +1376,24 @@ Filter, Interceptor 차이점 요약 <br>
 </details>
 
 
+<details>
+<summary> @RequestBody, @RequestParam 차이에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- @RequestBody 는 클라이언트가 전송하는 JSON 형태의 HTTP Body 내용을 MessageConverter를 통해 Java Object로 변환시켜주는 역할을 한다. <br>
+값을 주입하지 않고 값을 변환 시키므로(Reflection을 사용해 할당), 변수들의 생성자, Getter,Setter가 없어도 정상적으로 할당된다. <br>
+하지만, 조회시 스냅샷 인스턴스를 생성해 보관하기 때문에 메모리 사용량이 증가한다. <br>
+<br>
+
+- @RequestParam 은 1개의 HTTP 요청 파라미터를 받기 위해 사용한다. <br>
+@RequestParam은 필수 여부가 true이기 때문에, 기본적으로 반드시 해당 파라미터가 전송되어야 한다. <br>
+전송되지 않으면 400Error를 유발할 수 있으며, 반드시 필요한 변수가 아니라면 required의 값을 false로 설정해줘야 한다. <br>
+  
+</div>
+</details>
+ 
+
 
 
 --------------------------------------------------------------------------------------------------------
