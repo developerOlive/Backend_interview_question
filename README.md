@@ -1414,6 +1414,17 @@ Filter, Interceptor 차이점 요약 <br>
 
 
 
+<details>
+<summary> MVC는 어떠한 흐름으로 요청을 처리하는지 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+  ![image](https://user-images.githubusercontent.com/67456294/212773042-41f7dbdd-9709-4753-a303-a7073fe5f49b.png)
+  
+</div>
+</details>
+
+
 
 --------------------------------------------------------------------------------------------------------
 
