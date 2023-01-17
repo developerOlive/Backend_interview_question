@@ -1420,6 +1420,9 @@ Filter, Interceptor 차이점 요약 <br>
 <br>
   
   ![image](https://user-images.githubusercontent.com/67456294/212773042-41f7dbdd-9709-4753-a303-a7073fe5f49b.png)
+
+- DispatcherServlet : 클라이언트에게 요청을 받아 응답까지의 MVC 처리과정을 통제한다. <br>
+- HandlerMapping : 클라이언트의 요청 URL을 어떤 Controller가 처리할지 결정한다. <br>
   
 </div>
 </details>
