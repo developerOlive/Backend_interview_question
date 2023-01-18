@@ -1423,7 +1423,11 @@ Filter, Interceptor 차이점 요약 <br>
 
 - DispatcherServlet : 클라이언트에게 요청을 받아 응답까지의 MVC 처리과정을 통제한다. <br>
 - HandlerMapping : 클라이언트의 요청 URL을 어떤 Controller가 처리할지 결정한다. <br>
+ <br>
   
+1. 클라이언트는 URL을 통해 요청을 전송한다.
+2. 디스패처 서블릿은 핸들러 매핑을 통해 해당 요청이 어느 컨트롤러에게 온 요청인지 찾는다.
+
 </div>
 </details>
 
