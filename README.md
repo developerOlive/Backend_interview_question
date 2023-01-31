@@ -1612,15 +1612,13 @@ Filter, Interceptor 차이점 요약 <br>
 <div markdown="1">  
 <br>
   
-- Context Switching이란?<br>
-    - 현재 진행하고 있는 Task(Process, Thread)의 상태를 저장하고 다음 진행할 Task의 상태 값을 읽어 적용하는 과정을 말한다.<br>
-- Context Switching 과정<br>
-    1. Task의 대부분 정보는 Register에 저장되고 PCB(Process Control Block)로 관리된다.<br>
-    2. 현재 실행하고 있는 Task의 PCB 정보를 저장한다. (Process Stack, Ready Queue)<br>
-    3. 다음 실행할 Task의 PCB 정보를 읽어 Register에 적재하고 CPU가 이전에 진행했던 과정을 연속적으로 수행할 수 있다.<br>
-- Context Switching Cost (Process vs Thread)<br>
-    - Process Context Switching 비용 > Thread Context Switching 비용<br>
-    - Thread는 Stack 영역을 제외한 모든 메모리를 공유하므로 Context Switching 수행 시 Stack 영역만 변경하면 되기 때문에 비용이 적게 든다.<br>
+멀티프로세스 환경에서 CPU가 어떤 하나의 프로세스를 실행하고 있는 상태에서<br>
+인터럽트 요청에 의해 다음 우선 순위의 프로세스가 실행되어야 할 때 <br>
+기존의 프로세스의 상태 또는 레지스터 값(Context)을 저장하고 <br>
+CPU가 다음 프로세스를 수행하도록 새로운 프로세스의 상태 또는 레지스터 값(Context)를 교체하는 작업을 <br>
+Context Switch(Context Switching)라고 한다.<br>
+
+<br>
 </div>
 </details>
 
