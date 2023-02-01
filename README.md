@@ -1444,6 +1444,18 @@ Filter, Interceptor 차이점 요약 <br>
 
 ## [ OS ]  
 
+
+<details>
+<summary> 운영 체제가 무엇인지 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- 운영 체제는 컴퓨터 하드웨어가 컴퓨터 소프트웨어와 통신하고 작동하도록하는 소프트웨어 프로그램이다. 
+
+</div>
+</details>
+
+
 <details>
 <summary> 프로세스와 스레드의 차이에 대해서 설명해주세요. </summary>
 <div markdown="1">  
