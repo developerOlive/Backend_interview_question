@@ -1550,6 +1550,27 @@ Filter, Interceptor 차이점 요약 <br>
 
 
 
+
+<details>
+<summary> 멀티 스레딩(Multi-threading) 의 장점과 단점에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- 멀티 스레딩이란 하나의 프로세스를 다수의 스레드로 만들어 실행하는 것<br>
+
+- 장점) <br>
+  - 하나의 프로세스 내에 다수의 실행 단위들이 존재하여 작업의 수행에 필요한 자원들을 공유하기 때문에 자원의 생성과 관리가 중복되는 것을 줄일 수 있다.<br>
+
+- 단점)<br>
+  - 교착상태를 발생시킬 수 있다.<br>
+  - 동기화에 주의해야한다.<br>
+    <br>
+    
+</div>
+</details>
+
+
+
 <details>
 <summary>멀티 프로세스 대신 멀티 스레드를 사용하는 이유에 대해서 설명해주세요. </summary>
 <div markdown="1">  
