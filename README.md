@@ -1710,6 +1710,19 @@ Context Switch(Context Switching)라고 한다.<br>
 </details>
 
 
+
+<details>
+<summary> 운영체제 메모리에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+
+![image](https://user-images.githubusercontent.com/67456294/217951566-01bfe95b-db53-4b62-865f-53f0a5373546.png)
+
+<br>
+</div>
+</details>
+
+
 --------------------------------------------------------------------------------------------------------
   
 ## [ JPA ]  
