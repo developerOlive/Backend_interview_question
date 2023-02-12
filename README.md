@@ -1718,6 +1718,10 @@ Context Switch(Context Switching)라고 한다.<br>
 
 ![image](https://user-images.githubusercontent.com/67456294/217951566-01bfe95b-db53-4b62-865f-53f0a5373546.png)
 
+프로그램이 실행되기 위해 프로그램이 메모리에 로드가 되어야한다. <br>
+따라서 운영체제에서 프로그램의 실행을 위해 다향한 메모리 공간을 제공한다. <br>
+코드, 데이터, 스택, 힙 영역이 할당되고 각 역할은 다음과 같다. <br>
+
 <br>
 </div>
 </details>
