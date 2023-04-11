@@ -1117,6 +1117,7 @@ public class Test {
 - 컨테이너 안에 들어있는 객체 <br>
 - 컨테이너에 담겨있으며, 필요할 때 컨테이너에서 가져와서 사용 <br>
 - @Bean 을 사용하거나 xml 설정을 통해 일반 객체를 Bean으로 등록할 수 있고, Bean으로 등록된 객체는 쉽게 주입하여 사용 가능 <br><br>
+
 </div>
 </details>
 
@@ -1133,6 +1134,7 @@ public class Test {
 2. 설정 클래스를 따로 만들어 @Configuration 어노테이션을 붙이고,<br>
 해당 클래스 안에서 빈으로 등록할 메소드를 만들어 @Bean 어노테이션을 붙여주면 자동으로 해당 타입의 빈 객체가 생성됩니다.<br>
 <br>
+
 </div>
 </details>
 
@@ -1148,6 +1150,7 @@ public class Test {
 
 - 스프링 컨테이너에 의해 생명주기 관리 <br>
 - 스프링 컨테이너 종료 시 빈 객체 소멸 <br> <br>
+
 </div>
 </details>
 
@@ -1162,9 +1165,29 @@ public class Test {
 - 컨테이너는 적절한 설정만 되어있다면 개발자가 작성한 코드를 스스로 참조한 뒤 알아서 객체의 생성과 소멸을 컨트롤합니다. <br>
 - Spring 프레임워크는 다른 프레임워크들과 달리 컨테이너 기능을 제공하고 있습니다. <br> 
 - 이와 같은 컨테이너 기능을 제공하는 것이 가능하도록 하는 것이 IoC 패턴입니다.
-- 컨테이너의 종류로는 BeanFactory, ApplicationContext가 있습니다.
+- 컨테이너의 종류로는 BeanFactory, ApplicationContext가 있습니다. 
+<br>
+
 </div>
 </details>
+
+
+<details>
+<summary> Bean Scope에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+
+- Bean Scope라는 것은 Bean의 범위
+- Bean Scope는 객체를 만들 때 컨테이너가 이 객체를 한 번만 호출하는지, 아니면 호출 할 때마다 여러 번 만드는지에 대한 내용이다. <br>
+- 그래서 문서 상에 여러 Scope가 있는 걸 볼 수 있고, 대부분 singleton 혹은 prototype이다. <br>
+
+https://gmlwjd9405.github.io/2018/11/10/spring-beans.html
+
+<br>
+
+</div>
+</details>
+
 
 
 <details>
@@ -1191,6 +1214,7 @@ Spring에서의 IoC <br>
 - 반면에 프레임워크는 거꾸로 애플리케이션 코드가 프레임워크에 의해 사용됩니다. <br>
 - 보통 프레임워크 위에 개발한 클래스를 등록해두고, <br> 
 프레임워크가 흐름을 주도히는 중에 개발자가 만든 애플리케이션 코드를 시용하도록 만드는 방식입니다. <br> 
+
 </div>
 </details>
 
