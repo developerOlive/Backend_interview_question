@@ -1179,7 +1179,10 @@ public class Test {
 
 - Bean Scope라는 것은 Bean의 범위
 - Bean Scope는 객체를 만들 때 컨테이너가 이 객체를 한 번만 호출하는지, 아니면 호출 할 때마다 여러 번 만드는지에 대한 내용이다. <br>
-- 그래서 문서 상에 여러 Scope가 있는 걸 볼 수 있고, 대부분 singleton 혹은 prototype이다. <br>
+- 여러 Scope가 있는 걸 볼 수 있고, 대부분 singleton 혹은 prototype이다. <br>
+- 스프링은 기본적으로 모든 bean을 singleton으로 생성하여 관리한다. <br>
+- 구체적으로는 애플리케이션 구동 시 JVM 안에서 스프링이 bean마다 하나의 객체를 생성하는 것을 의미한다. <br>
+- 그래서 우리는 스프링을 통해서 bean을 제공받으면 언제나 주입받은 bean은 동일한 객체라는 가정하에서 개발을 한다. <br>
 
 https://gmlwjd9405.github.io/2018/11/10/spring-beans.html
 
