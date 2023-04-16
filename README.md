@@ -1182,7 +1182,15 @@ public class Test {
 - 여러 Scope가 있는 걸 볼 수 있고, 대부분 singleton 혹은 prototype이다. <br>
 - 스프링은 기본적으로 모든 bean을 singleton으로 생성하여 관리한다. <br>
 - 구체적으로는 애플리케이션 구동 시 JVM 안에서 스프링이 bean마다 하나의 객체를 생성하는 것을 의미한다. <br>
-- 그래서 우리는 스프링을 통해서 bean을 제공받으면 언제나 주입받은 bean은 동일한 객체라는 가정하에서 개발을 한다. <br>
+- 그래서 우리는 스프링을 통해서 bean을 제공받으면 언제나 주입받은 bean은 동일한 객체라는 가정하에서 개발을 한다. <br><br><br>
+
+
+1. Singleton <br>
+- ‘singleton’ bean은 Spring 컨테이너에서 한 번 생성된다.<br>
+  - 컨테이너가 사라질 때 bean도 제거된다.<br>
+- 기본적으로 모든 bean은 scope이 명시적으로 지정되지 않으면 singleton이다.<br>
+
+
 
 https://gmlwjd9405.github.io/2018/11/10/spring-beans.html
 
