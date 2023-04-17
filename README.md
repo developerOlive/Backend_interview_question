@@ -1189,6 +1189,8 @@ public class Test {
 - ‘singleton’ bean은 Spring 컨테이너에서 한 번 생성된다.<br>
   - 컨테이너가 사라질 때 bean도 제거된다.<br>
 - 기본적으로 모든 bean은 scope이 명시적으로 지정되지 않으면 singleton이다.<br>
+- 생성된 하나의 인스턴스는 single beans cache에 저장되고, 해당 bean에 대한 요청과 참조가 있으면 캐시된 객체를 반환한다.
+  - 하나만 생성되기 때문에 동일한 것을 참조한다.
 
 
 
