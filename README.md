@@ -1190,7 +1190,13 @@ public class Test {
   - 컨테이너가 사라질 때 bean도 제거된다.<br>
 - 기본적으로 모든 bean은 scope이 명시적으로 지정되지 않으면 singleton이다.<br>
 - 생성된 하나의 인스턴스는 single beans cache에 저장되고, 해당 bean에 대한 요청과 참조가 있으면 캐시된 객체를 반환한다.
-  - 하나만 생성되기 때문에 동일한 것을 참조한다.
+  - 하나만 생성되기 때문에 동일한 것을 참조한다.<br> <br>
+  
+2. Prototype <br>
+- ‘prototype’ bean은 모든 요청에서 새로운 객체를 생성하는 것을 의미한다. <br>
+  - 즉, prototype bean은 의존성 관계의 bean에 주입 될 때 새로운 객체가 생성되어 주입된다. <br>
+- 정상적인 방식으로 gc에 의해 bean이 제거된다. <br>
+
 
 
 
