@@ -1177,21 +1177,29 @@ public class Test {
 <div markdown="1">  
 <br>
 
+![image](https://user-images.githubusercontent.com/67456294/234728511-f0ef56b3-d312-442d-94dc-f0774795768f.png)
+
+
 - Bean Scope라는 것은 Bean의 범위
 - Bean Scope는 객체를 만들 때 컨테이너가 이 객체를 한 번만 호출하는지, 아니면 호출 할 때마다 여러 번 만드는지에 대한 내용이다. <br>
 - 여러 Scope가 있는 걸 볼 수 있고, 대부분 singleton 혹은 prototype이다. <br>
 - 스프링은 기본적으로 모든 bean을 singleton으로 생성하여 관리한다. <br>
 - 구체적으로는 애플리케이션 구동 시 JVM 안에서 스프링이 bean마다 하나의 객체를 생성하는 것을 의미한다. <br>
-- 그래서 우리는 스프링을 통해서 bean을 제공받으면 언제나 주입받은 bean은 동일한 객체라는 가정하에서 개발을 한다. <br><br><br>
+- 그래서 우리는 스프링을 통해서 bean을 제공받으면 언제나 주입받은 bean은 동일한 객체라는 가정하에서 개발을 한다. <br><br><br><br>
 
+
+![image](https://user-images.githubusercontent.com/67456294/234728524-e592dc75-e97e-42a2-980b-8073e27e33d9.png)
 
 1. Singleton <br>
 - ‘singleton’ bean은 Spring 컨테이너에서 한 번 생성된다.<br>
   - 컨테이너가 사라질 때 bean도 제거된다.<br>
 - 기본적으로 모든 bean은 scope이 명시적으로 지정되지 않으면 singleton이다.<br>
 - 생성된 하나의 인스턴스는 single beans cache에 저장되고, 해당 bean에 대한 요청과 참조가 있으면 캐시된 객체를 반환한다.
-  - 하나만 생성되기 때문에 동일한 것을 참조한다.<br> <br>
+  - 하나만 생성되기 때문에 동일한 것을 참조한다.<br><br><br><br>
+
   
+  ![image](https://user-images.githubusercontent.com/67456294/234728537-6f049b24-0983-4522-9490-c63835c93aa2.png)
+
 2. Prototype <br>
 - ‘prototype’ bean은 모든 요청에서 새로운 객체를 생성하는 것을 의미한다. <br>
   - 즉, prototype bean은 의존성 관계의 bean에 주입 될 때 새로운 객체가 생성되어 주입된다. <br>
