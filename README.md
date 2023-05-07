@@ -526,6 +526,10 @@ JVM의 구조는 Class Loader, Execution engine, Runtime Data Area, JNI, Native 
 이때 나오는 파일은 자바 바이트 코드(.class)파일로 아직 컴퓨터가 읽을 수 없는 자바 가상 머신이 이해할 수 있는 코드입니다. <br>
 바이트 코드의 각 명령어는 1바이트 크기의 Opcode와 추가 피연산자로 이루어져 있습니다. <br>
 
+3. 컴파일된 바이트 코드를 JVM의 클래스로더(Class Loader)에게 전달합니다.<br>
+
+4. 클래스 로더는 동적로딩(Dynamic Loading)을 통해 필요한 클래스들을 로딩 및 링크하여 런타임 데이터 영역(Runtime Data area), 즉 JVM의 메모리에 올립니다.<br>
+
 
 
 
