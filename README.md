@@ -528,12 +528,15 @@ JVM의 구조는 Class Loader, Execution engine, Runtime Data Area, JNI, Native 
 
 3. 컴파일된 바이트 코드를 JVM의 클래스로더(Class Loader)에게 전달합니다.<br>
 
-4. 클래스 로더는 동적로딩(Dynamic Loading)을 통해 필요한 클래스들을 로딩 및 링크하여 런타임 데이터 영역(Runtime Data area), 즉 JVM의 메모리에 올립니다.<br>
+4. 클래스 로더는 동적로딩(Dynamic Loading)을 통해 필요한 클래스들을 로딩 및 링크하여 런타임 데이터 영역(Runtime Data area), <br>
+  즉 JVM의 메모리에 올립니다.<br>
 
-
-
-
-    
+  - 클래스 로더 세부 동작.<br>
+    - 로드 : 클래스 파일을 가져와서 JVM의 메모리에 로드합니다.<br>
+    - 검증 : 자바 언어 명세(Java Language Specification) 및 JVM 명세에 명시된 대로 구성되어 있는지 검사합니다.<br>
+    - 준비 : 클래스가 필요로 하는 메모리를 할당합니다. (필드, 메서드, 인터페이스 등등).<br>
+    - 분석 : 클래스의 상수 풀 내 모든 심볼릭 레퍼런스를 다이렉트 레퍼런스로 변경합니다.<br>
+    - 초기화 : 클래스 변수들을 적절한 값으로 초기화합니다. (static 필드).<br>
     
 </div>
 </details>
