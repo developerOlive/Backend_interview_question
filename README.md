@@ -518,9 +518,11 @@ JVM의 구조는 Class Loader, Execution engine, Runtime Data Area, JNI, Native 
 <details>
 <summary> 자바 컴파일 순서에 대해서 설명해주세요. </summary>
 <div markdown="1">  
-<br>
+<br><br> 
 
-  
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/0bf7a8ee-d166-44f4-9afe-ad1ddc115163)
+
+  <br><br>
 1. 개발자가 자바 소스코드(.java)를 작성합니다. <br><br>
 
 2. 자바 컴파일러(Java Compiler)가 자바 소스파일을 컴파일합니다. <br>
@@ -552,7 +554,10 @@ JVM의 구조는 Class Loader, Execution engine, Runtime Data Area, JNI, Native 
       - 바이트 코드 전체를 컴파일하여 바이너리 코드로 변경하고 이후에는 해당 메서드를 더이상 인터프리팅 하지 않고, 바이너리 코드로 직접 실행하는 방식입니다. <br>
     - 하나씩 인터프리팅하여 실행하는 것이 아니라 바이트 코드 전체가 컴파일된 바이너리 코드를 실행하는 것이기 때문에 전체적인 실행속도는 인터프리팅 방식보다 빠릅니다. <br><br>
 
+  
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/152de882-bf58-4b83-b4f4-8210f3a41d16)
 
+<br><br>
 </div>
 </details>
 
