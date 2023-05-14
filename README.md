@@ -11,7 +11,7 @@
 
 ![image](https://user-images.githubusercontent.com/67456294/185793419-df382525-a5d8-4008-a9cb-2b6cf73e36b8.png)
 
-  
+  d
 - TCP와 UDP는 둘 다 전송 계층에서 데이터를 보내기 위해 사용하는 프로토콜 입니다.  
 
 [ TCP ] <br>
@@ -461,27 +461,21 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 <summary> JVM에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
-
-- 자바 가상 머신의 약자를 따서 줄여 부르는 용어로 <br>
-JVM의 역할은 자바 애플리케이션을 클래스 로더를 통해 읽어 자바 API와 함께 실행하는 것입니다. <br>
-메모리 관리(GC)을 수행하며 스택기반의 가상머신입니다. <br>
+  
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/95de439e-875c-41db-b728-ebc20b0ad355)
 
 
-![image](https://user-images.githubusercontent.com/67456294/236063990-d2c17752-7994-4143-83b4-9857844a3e6f.png)
+- JVM은, 다른 프로그램을 실행시키는 것이 목적이다.<br>
+갖춘 기능으로는 크게 2가지로 말할 수 있다.<br>
 
+1. 자바 프로그램이 어느 기기나 운영체제 상에서도 실행될 수 있도록 하는 것
+2. 프로그램 메모리를 관리하고 최적화하는 것 <br><br>
+  
+- 개발자들이 말하는 JVM은 보통 자바 앱에 대한 리소스를 대표하고 통제하는 서버를 지칭한다.<br>
 
-JVM의 구조는 Class Loader, Execution engine, Runtime Data Area, JNI, Native Method Library로 이루어져 있습니다.
-
-- 클래스 로더: JVM내로 클래스를 로드하고, 링크를 통해 배치하는 작업을 수행하는 모듈
-- 실행 엔진: 바이트 코드를 실행시키는 역할
-  - 인터프리터: 바이트 코드를 한줄 씩 실행합니다.
-  - JIT 컴파일러: 인터피르터 효율을 높이기 위한 컴파일러로 인터프리터가 반복되는 코드를 발견하면 JIT 컴파일러가 반복되는 코드를 네이티브 코드로 바꿔줍니다. 그 다음부터 인터프리터는 네이티브 코드로 컴파일된 코드를 바로 사용합니다.
-  - GC(Garbage Collector): 가비지 컬렉터로 힙 영역에서 사용되지 않는 객체들을 제거하는 작업을 의미합니다.
-  - Runtime Data Areas: 프로그램 실행 중에 사용되는 다양한 영역입니다.
-  - PC Register: Thread가 시작될 때 생성되며 현재 수행 중인 JVM 명령의 주소를 갖고 있습니다.
-  - Stack Area: 지역 변수, 파라미터 등이 생성되는 영역. 실제 객체는 Heap에 할당되고 해당 레퍼런스만 Stack에 저장됩니다.
-  - Heap Area: 동적으로 생성된 오브젝트와 배열이 저장되는 곳으로 GC의 대상 영역입니다.
-  - Method Area: 클래스 멤버 변수, 메소드 정보, Type 정보, Constant Pool, static, final 변수 등이 생성됩니다. 상수 풀(Constant Pool)은 모든 Symbolic Reference를 포함하고 있습니다.
+- 자바 애플리케이션을 클래스 로더를 통해 읽어들이고, 자바 API와 함께 실행하는 역할 그리고
+  - JAVA와 OS 사이에서 중개자 역할을 수행하여 OS에 구애받지 않고 재사용을 가능하게 해준다.<br><br>
+  
 
 </div>
 </details>
