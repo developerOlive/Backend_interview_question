@@ -488,6 +488,11 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 
   4. 로딩된 class파일들은 Execution engine을 통해 해석됨<br>
 
+  5. 해석된 바이트 코드는 메모리 영역에 배치되어 실질적인 수행이 이루어짐. 이러한 실행 과정 속 JVM은 필요에 따라 스레드 동기화나 가비지 컬렉션 같은 메모리 관리 작업을 수행함 <br><br>
+  
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/21b369b3-7504-48e6-b154-a5dc392fe291)
+
+  <br><br>
 
 <br><br>
 </div>
