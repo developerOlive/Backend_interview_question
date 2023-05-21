@@ -492,6 +492,14 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
   
   ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/21b369b3-7504-48e6-b154-a5dc392fe291)
 
+  - 자바 컴파일러<br>
+    - 자바 소스코드(.java)를 바이트 코드(.class)로 변환시켜줌<br><br>
+  
+  - 클래스 로더<br>
+    - JVM은 런타임시에 처음으로 클래스를 참조할 때 해당 클래스를 로드하고 메모리 영역에 배치시킴. 
+    - 이 동적 로드를 담당하는 부분이 바로 클래스 로더<br>
+  
+  
   <br><br>
 
 <br><br>
