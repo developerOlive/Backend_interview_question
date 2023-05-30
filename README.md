@@ -520,6 +520,24 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 
 
 <details>
+<summary> 가비지 컬렉션에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br>
+  
+- Garbage Collection<br>
+  - C/C++ 언어와 달리 자바는 개발자가 명시적으로 객체를 해제할 필요가 없음<br>
+  - 사용하지 않는 객체는 메모리에서 삭제하는 작업을 GC라고 부르며 JVM에서 GC를 수행함<br>
+  - 기본적으로 JVM의 메모리는 총 5가지 영역(class, stack, heap, native method, PC)으로 나뉘는데, GC는 힙 메모리만 다룸<br>
+  - 일반적으로 다음과 같은 경우에 GC의 대상이 됨 <br>
+    - 객체가 NULL인 경우 (ex. String str = null) <br>
+    - 블럭 실행 종료 후, 블럭 안에서 생성된 객체 <br>
+  
+</div>
+</details>
+
+
+
+<details>
 <summary> 컬렉션 프레임워크에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
