@@ -535,7 +535,7 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
  
 [ GC의 메모리 해제 과정 ]
   
-1. Marking
+1. Marking <br>
   
   ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/347ddcb0-fb9e-4dbb-908e-b98f4a1a3a01)
 
@@ -544,7 +544,16 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
   - 이것은 GC가 메모리가 사용되는지 아닌지를 찾아냅니다. <br>
   - 참조되는 객체는 파란색으로, 참조되지 않는 객체는 주황색으로 보여집니다. <br>
   - 모든 오브젝트는 마킹 단계에서 결정을 위해 스캔되어집니다. <br>
-  - 모든 오브젝트를 스캔하기 때문에 매우 많은 시간을 소모하게 됩니다. <br><br>
+  - 모든 오브젝트를 스캔하기 때문에 매우 많은 시간을 소모하게 됩니다. <br><br><br>
+  
+  
+2. Normal Deletion <br>
+  
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/35dfc113-28b4-4771-9c7e-447730cb922f)
+
+  - 참조되지 않는 객체를 제거하고, 메모리를 반환합니다. <br>
+  - 메모리 Allocator는 반환되어 비어진 블럭의 참조 위치를 저장해 두었다가 <br>
+    - 새로운 오브젝트가 선언되면 할당되도록 합니다. <br><br><br>
 
   
 </div>
