@@ -554,6 +554,16 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
   - 참조되지 않는 객체를 제거하고, 메모리를 반환합니다. <br>
   - 메모리 Allocator는 반환되어 비어진 블럭의 참조 위치를 저장해 두었다가 <br>
     - 새로운 오브젝트가 선언되면 할당되도록 합니다. <br><br><br>
+  
+3. Compacting <br>
+  
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/4adbcf66-6767-4b97-8b7e-43fe11b9c57e)
+
+- 퍼포먼스를 향상시키기 위해, 참조되지 않는 객체를 제거하고 또한 남은 참조되어지는 객체들을 묶습니다. <br>
+- 이들을 묶음으로서 공간이 생기므로 새로운 메모리 할당 시에 더 쉽고 빠르게 진행 할 수 있습니다.<br><br><br>
+
+
+  
 
   
 </div>
