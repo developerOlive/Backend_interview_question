@@ -560,11 +560,21 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
   ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/4adbcf66-6767-4b97-8b7e-43fe11b9c57e)
 
 - 퍼포먼스를 향상시키기 위해, 참조되지 않는 객체를 제거하고 또한 남은 참조되어지는 객체들을 묶습니다. <br>
-- 이들을 묶음으로서 공간이 생기므로 새로운 메모리 할당 시에 더 쉽고 빠르게 진행 할 수 있습니다.<br><br><br>
+- 이들을 묶음으로서 공간이 생기므로 새로운 메모리 할당 시에 더 쉽고 빠르게 진행 할 수 있습니다.<br><br><br><br>
 
 
+ [ Generational Gabage Collection ] <br>
   
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/c371347f-2fe3-497a-b860-d13e903f9c5d)
+  
+  <br>
+  1. Young 영역(Yong Generation 영역) <br>
+  
+    - 새롭게 생성한 객체의 대부분이 여기에 위치합니다. 
+    - 대부분의 객체가 금방 접근 불가능 상태가 되기 때문에 매우 많은 객체가 Young 영역에 생성되었다가 사라집니다. 
+    - 이 영역에서 객체가 사라질때 Minor GC 가 발생한다고 말합니다.
 
+<br><br><br>
   
 </div>
 </details>
