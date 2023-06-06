@@ -563,7 +563,7 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 - 이들을 묶음으로서 공간이 생기므로 새로운 메모리 할당 시에 더 쉽고 빠르게 진행 할 수 있습니다.<br><br><br><br>
 
 
- [ Generational Gabage Collection ] <br>
+ [ Generational Gabage Collection ] <br><br>
   
   ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/c371347f-2fe3-497a-b860-d13e903f9c5d)
   
@@ -573,6 +573,15 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
     - 새롭게 생성한 객체의 대부분이 여기에 위치합니다. 
     - 대부분의 객체가 금방 접근 불가능 상태가 되기 때문에 매우 많은 객체가 Young 영역에 생성되었다가 사라집니다. 
     - 이 영역에서 객체가 사라질때 Minor GC 가 발생한다고 말합니다.
+  
+   <br>
+  
+  2. Old 영역(Old Generation 영역) <br>
+  
+    - 접근 불가능 상태로 되지 않아 Young 영역에서 살아남은 객체가 여기로 복사됩니다. 
+    - 대부분 Young 영역보다 크게 할당하며, 크기가 큰 만큼 Young 영역보다 GC는 적게 발생합니다. 
+    - 이 영역에서 객체가 사라질 때 Major GC(혹은 Full GC) 가 발생한다고 말합니다.
+
 
 <br><br><br>
   
