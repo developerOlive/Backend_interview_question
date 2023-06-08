@@ -588,6 +588,13 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
     - JVM이 클래스들과 메소드들을 설명하기 위해 필요한 메타데이터들을 포함하고 있습니다. 
     - JDK8부터는 PermGen은 Metaspace로 교체됩니다.
   
+<br><br><br>
+  
+[ Generational Garbage Collection 과정 ] <br><br>
+  
+  1. 어떠한 새로운 객체가 들어오면 Eden Space에 할당합니다.<br>
+  
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/1c4c5362-28ec-4651-b1ba-01b42c9a4f9d)
 
 
 <br><br><br>
