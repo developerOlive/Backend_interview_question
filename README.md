@@ -595,6 +595,13 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
   1. 어떠한 새로운 객체가 들어오면 Eden Space에 할당합니다.<br>
   
   ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/1c4c5362-28ec-4651-b1ba-01b42c9a4f9d)
+  
+  <br><br>
+  
+  2. Eden space가 가득차게 되면, minor garbage collection이 시작됩니다. <br><br>
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/36adf24f-c1c9-4888-a280-302a4c859a97)
+
+  
 
 
 <br><br><br>
