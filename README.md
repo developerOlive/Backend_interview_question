@@ -601,8 +601,13 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
   2. Eden space가 가득차게 되면, minor garbage collection이 시작됩니다. <br><br>
   ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/36adf24f-c1c9-4888-a280-302a4c859a97)
 
+  <br><br>
   
+  3. 참조되는 객체들은 첫 번째 survivor(S0)로 이동되어지고, 비 참조 객체는 Eden space가 clear 될 때 반환됩니다. <br><br>
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/8a011997-97c4-47f3-adfd-6cc0dd74c658)
 
+ <br><br>
+  
 
 <br><br><br>
   
