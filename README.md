@@ -611,14 +611,22 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
   4. 다음 minor GC 때, Eden space에서는 같은 일이 일어납니다.<br>
   비 참조 객체는 삭제되고 참조 객체는 survivor space로 이동하는 것 입니다.<br>
   그러나 이 케이스에서 참조 객체는 두 번째 survivor space로 이동하게 됩니다. <br>
-  게다가 최근 minor GC에서 첫 번째 survivor space로 이동된 객체들도 age가 증가하고 S1 공간으로 이동하게 됩니다.<br>
+  최근 minor GC에서 첫 번째 survivor space로 이동된 객체들도 age가 증가하고 S1 공간으로 이동하게 됩니다.<br>
   한번 모든 surviving 객체들이 S1으로 이동하게 되면 S0와 Eden 공간은 Clear 됩니다. <br>
   주의해야할 점은 이제 우리는 다른 aged 객체들을 서바이버 공간에 가지게 되었다는 것입니다.<br>
   
   ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/69740f02-500f-4a78-9a9f-eaca24701926)
   
    <br><br>
+  
+  5. 다음 minor GC 때, 같은 과정이 반복 됩니다. <br>
+  그러나 이 번엔 survivor space들은 switch 됩니다. <br> 
+  참조되는 객체들은 S0로 이동합니다. <br>
+  살아남은 객체들은 aged 되고 Eden과 S1 공간은 Clear 됩니다. <br>
+  
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/c3e4b065-3991-49fb-8e44-da625e560e0c)
 
+   <br><br>
 
 
   
