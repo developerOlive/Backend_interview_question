@@ -628,6 +628,13 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 
    <br><br>
 
+   6. 아래 그림은 promotion을 보여줍니다. <br> 
+      minor GC 후 aged 오브젝트들이 일정한 age threshold(문지방)을 넘게 되면 그들은 young generation에서 old로 promotion 되어집니다. <br> 
+      여기서는 8을 예로 들었습니다. <br> 
+
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/a80c89ab-e9cf-4027-8b26-30eba2db0ba4)
+
+  <br><br>
 
   
 
