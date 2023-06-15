@@ -636,7 +636,13 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 
   <br><br>
 
-  
+
+  7. minor GC가 계속되고 계속해서 객체들이 Old Generation으로 이동됩니다. <br>
+
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/3ff2a8ab-67a7-4004-b700-b8dcc1531e3e)
+
+
+    <br><br>
 
 <br><br><br>
   
