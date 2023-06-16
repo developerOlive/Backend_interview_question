@@ -641,8 +641,15 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 
   ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/3ff2a8ab-67a7-4004-b700-b8dcc1531e3e)
 
+  <br><br>
 
-    <br><br>
+  8. 아래 그림은 전 과정을 보여주고 있습니다.<br>
+     결국 major GC가 old Generation에 시행되고, old Generation은 Clear 되고, 공간이 Compact 되어집니다.<br>
+
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/f443a389-ba1d-41bb-8c98-8096a7601236)
+
+
+
 
 <br><br><br>
   
