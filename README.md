@@ -825,14 +825,33 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 <summary> java의 데이터 타입에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/5b94c67b-5095-4b37-a525-e54ab726bbc4)
+
+<br><br>
+
+
   
 1. 기본 데이터 타입(Primitive Data Type) <br>
-- 기본 타입의 종류는 byte, short, char, int, float, double, boolean이 있다. <br>
-  - 정수형 : byte, short, int, long <br>
-  - 실수형 : float, double <br>
-  - 논리형 : boolean(ture/false) <br>
-  - 문자형 : char <br>
-- 기본 타입의 크기가 작고 고정적이기 때문에 메모리의 Stack 영역에 저장된다. <br><br>
+- JAVA에서는 총 8가지의 Primitive type을 미리 정의하고 제공합니다.
+- 자바에서 기본 자료형은 반드시 사용하기 전에 선언(Declared)되어야 합니다.
+- OS에 따라 자료형의 길이가 변하지 않습니다.
+- 비객체 타입입니다. 따라서 null 값을 가질 수 없습니다. 만약 Primitive type에 Null을 넣고 싶다면 Wrapper Class를 활용합니다.
+- 스택(Stack) 메모리에 저장됩니다.  <br> <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/13873db3-e780-4f76-8584-8453e5832447)
+
+ <br>
+
+- boolean  <br>
+  - 논리형인 boolean의 기본값은 false이며 참과 거짓을 저장하는 타입입니다.  <br>
+  - 주로 yes/no, on/off 등의 논리 구현에 주로 사용되며 두가지 값만 표현하므로 가장 크기가 작습니다.  <br>
+  - boolean은 실제로 1bit면 충분하지만, 데이터를 다루는 최소 단위가 1byte이므로 메모리 크기가 1byte입니다.  <br>
+
+ <br> <br>
+
+ 
+
 2. 참조 타입(Reference Data Type) <br>
 - 참조 타입의 종류는 class, array, interface, Enumeration이 있다. <br>
     - 기본형을 제외하고는 모두 참조형이다. <br>
