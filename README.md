@@ -873,14 +873,19 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
  
 
 2. 참조 타입(Reference Data Type) <br>
-- 참조 타입의 종류는 class, array, interface, Enumeration이 있다. <br>
-    - 기본형을 제외하고는 모두 참조형이다. <br>
-    - new 키워드를 이용하여 객체를 생성하여 데이터가 생성된 주소를 참조하는 타입이다. <br>
-    - String, StringBuffer, List, 개인이 만든 클래스 등 <br>
-    - String과 배열은 참조 타입과 달리 new 없이 생성이 가능하지만 기본 타입이 아닌 참조 타입이다. <br>
-- 참조 타입의 데이터의 크기가 가변적, 동적이기 때문에 동적으로 관리되는 Heap 영역에 저장된다. <br>
-- 더 이상 참조하는 변수가 없을 때 가비지 컬렉션에 의해 파괴된다. <br>
-- 참조 타입은 값이 저장된 곳의 주소를 저장하는 공간으로 객체의 주소를 저장한다. (Call-By-Value) <br> <br>
+- JAVA에서 Primitive type을 제외한 타입들이 모두 Reference type 입니다.
+- 클래스 타입(class type) , 인터페이스 타입(interface type) , 배열 타입(array type) , 열거 타입(enum type) 이 있습니다. <br>
+- String과 배열은 참조 타입과 달리 new 없이 생성이 가능하지만 기본 타입이 아닌 참조 타입입니다. <br>
+- new 키워드를 이용하여 객체를 생성하여 데이터가 생성된 주소를 참조하는 타입입니다.<br>
+- Reference type은 JAVA에서 최상인 java.lang.Object클래스를 상속하는 모든 클래스들을 말합니다.
+  -  new를 통하여 생성하는 객체는 메모리 영역인 Heap 영역에 생성을 하게되고, Garbage Collector가 돌면서 메모리를 해제합니다.
+- 참조 타입은 값이 저장된 곳의 주소를 저장하는 공간으로 객체의 주소를 저장하빈다. (Call-By-Value)
+- 빈 객체를 의미하는 Null이 존재합니다.
+
+
+
+<br> <br>
+
 </div>
 </details>
 
