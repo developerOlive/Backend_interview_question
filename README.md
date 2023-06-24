@@ -877,11 +877,16 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 - 클래스 타입(class type) , 인터페이스 타입(interface type) , 배열 타입(array type) , 열거 타입(enum type) 이 있습니다. <br>
 - String과 배열은 참조 타입과 달리 new 없이 생성이 가능하지만 기본 타입이 아닌 참조 타입입니다. <br>
 - new 키워드를 이용하여 객체를 생성하여 데이터가 생성된 주소를 참조하는 타입입니다.<br>
-- Reference type은 JAVA에서 최상인 java.lang.Object클래스를 상속하는 모든 클래스들을 말합니다.
-  -  new를 통하여 생성하는 객체는 메모리 영역인 Heap 영역에 생성을 하게되고, Garbage Collector가 돌면서 메모리를 해제합니다.
-- 참조 타입은 값이 저장된 곳의 주소를 저장하는 공간으로 객체의 주소를 저장하빈다. (Call-By-Value)
-- 빈 객체를 의미하는 Null이 존재합니다.
+- Reference type은 JAVA에서 최상인 java.lang.Object클래스를 상속하는 모든 클래스들을 말합니다.<br>
+  -  new를 통하여 생성하는 객체는 메모리 영역인 Heap 영역에 생성을 하게되고, Garbage Collector가 돌면서 메모리를 해제합니다.<br>
+- 참조 타입은 값이 저장된 곳의 주소를 저장하는 공간으로 객체의 주소를 저장합니다. (Call-By-Value)<br>
+- 빈 객체를 의미하는 Null이 존재합니다.<br>
+- 문법상으로는 에러가 없지만 실행시켰을 때 에러가 나는 런타임 에러가 발생합니다. 예를 들어 객체나 배열을 Null 값으로 받으면 NullPointException이 발생하므로 변수 값을 넣어야 합니다.
+- Heap 메모리에 생성된 인스턴스는 메소드나 각종 인터페이스에서 접근하기 위해 JVM의 Stack 영역에 존재하는 Frame에 일종의 포인터(C의 포인터와는 다릅니다.)인 참조값을 가지고 있어 이를 통해 인스턴스를 핸들링합니다.
 
+<br>
+  
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/ff43abd4-12fc-44eb-80ba-32354b9f0e1e)
 
 
 <br> <br>
