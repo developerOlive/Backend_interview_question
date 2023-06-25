@@ -1241,14 +1241,20 @@ public class Test {
 <div markdown="1">  
 <br>
 
-- String<br>
-    - immutable(불변)<br>
-    - 객체를 한 번 할당할 때 메모리 공간에 변동이 없다.(할당 시 Heap String Pool영역에 생성되어 그 값을 계속 사용한다.)<br>
-    - 동기화를 신경쓰지 않아도 된다.<br>
-    - 엄청나게 많은 문자열을 선언 및 연산할 떄는 성능저하를 고려해야 한다.<br>
-    
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/ab31d99a-d21f-4dcc-8c32-698ca934a119)
+
+
+- String <br>
+    - immutable(불변) <br>
+    - new 연산을 통해 생성된 인스턴스의 메모리 공간은 변하지 않는다. (Immutable) <br>
+      - 할당 시 Heap String Pool영역에 생성되어 그 값을 계속 사용한다. <br>
+    - Garbage Collector로 제거되어야 한다. <br>
+    - 객체가 불변하므로, Multithread에서 동기화를 신경 쓸 필요가 없음. (조회 연산에 매우 큰 장점)<br>
+    - 엄청나게 많은 문자열을 선언 및 연산할 때는 성능저하를 고려해야 한다.<br>
+    - 문자열 연산이 적고, 조회가 많은 멀티쓰레드 환경에서 좋다.<br>
+
 - StringBuffer<br>
-    - mutable(가변)<br>
+    - mutable(가변) <br>
     - 각 메서드별로 Synchronized Keyword가 존재한다.<br>
     - 멀티스레드 환경에서도 동기화를 지원한다.(thread-safe)<br>
 
