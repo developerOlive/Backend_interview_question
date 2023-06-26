@@ -1253,14 +1253,15 @@ public class Test {
     - 엄청나게 많은 문자열을 선언 및 연산할 때는 성능저하를 고려해야 한다.<br>
     - 문자열 연산이 적고, 조회가 많은 멀티쓰레드 환경에서 좋다.<br>
 
-- StringBuffer<br>
-    - mutable(가변) <br>
-    - 각 메서드별로 Synchronized Keyword가 존재한다.<br>
-    - 멀티스레드 환경에서도 동기화를 지원한다.(thread-safe)<br>
-
-- StringBuilder<br>
-    - mutable(가변)<br>
-    - 동기화를 지원하지 않는다. <br><br>
+- StringBuffer, StringBuilder<br>
+  - 공통점<br>
+    - new 연산으로 클래스를 한 번만 만듬 (Mutable)<br>
+    - 문자열 연산시 새로 객체를 만들지 않고, 크기를 변경시킴<br>
+    - StringBuffer와 StringBuilder 클래스의 메서드가 동일함<br>
+  - 차이점<br>
+    - StringBuffer는 Thread-Safe함 / StringBuilder는 Thread-safe하지 않음 (불가능)<br>
+    - StringBuffer 클래스 : 문자열 연산이 많은 Multi-Thread 환경<br>
+    - StringBuilder 클래스 : 문자열 연산이 많은 Single-Thread 또는 Thread 신경 안쓰는 환경<br>
 
 
 <정리><br>
@@ -1270,6 +1271,9 @@ public class Test {
 - 멀티스레드 환경이라면 값 동기화 보장을 위해 StringBuffer를 사용하고,<br>
   단일스레드 환경이라면 StringBuilder를 사용하는 것이 좋다.<br>
 - 단순히 성능만 놓고 본다면 연산이 많은 경우, StringBuilder > StringBuffer >>> String 이다.<br>
+
+<br><br>
+
 </div>
 </details>
 
