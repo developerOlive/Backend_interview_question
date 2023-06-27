@@ -813,9 +813,121 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 <summary> 제네릭에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
-제네릭은 자바의 타입 안정성을 맡고 있습니다. <br>
-컴파일 과정에서 타입체크를 해주는 기능으로 객체의 타입을 컴파일 시에 체크하기 때문에 <br> 
-객체의 타입 안정성을 높이고 형변환의 번거로움을 줄여줍니다. 
+
+ <br> <br>
+
+- 제네릭이란 <br>
+  - JDK1.5 에 처음 도입되었다. <br>
+  - Generics add stability to your code by making more of your bugs detectable at compile time. – Oracle Javadoc <br>
+  - 제네릭은 클래스 내부에서 사용할 데이터 타입을 외부에서 지정하는 기법을 의미한다. – 생활코딩 <br>
+  - 제네릭은 다양한 타입의 객체들을 다루는 메서드나 컬렉션 클래스에 컴파일 시의 타입체크를 해주는 기능이다. – 자바의 정석 <br>
+
+ <br> <br>
+ 
+- 제네릭이 왜 좋을까? <br>
+  - 우선 컴파일 타임에 타입을 체크하기 때문에 객체 자체의 타입 안전성을 높일 수 있다.
+    개발자가 의도하지 않은 타입의 객체가 저장되는 것을 방지할 수 있고 
+    저장한 객체를 다시 가져올 때 기존 타입과 다른 타입으로 캐스팅되어 발생하는 오류(ClassCastException)를 줄일 수 있다.
+  - 형 변환(Type Casting)의 번거로움을 줄일 수 있다.
+  - 제네릭없이 최상위 객체 Object를 사용한다면 아래와 같이 코드를 작성할 수 있다.
+
+ <br>
+ 
+```java
+class MadPlay {
+    private Object obj;
+
+    public MadPlay(Object obj) { this.obj = obj; }
+    public Object getObj() { return obj; }
+}
+
+class GenericTester {
+    public void executeMethod() {
+        MadPlay instance1 = new MadPlay(new String("Hello"));
+        MadPlay instance2 = new MadPlay(new Integer(123));
+        MadPlay instance3 = new MadPlay(new Character('a'));
+
+        String obj1 = (String) instance1.getObj();
+        Integer obj2 = (Integer) instance2.getObj();
+        Character obj3 = (Character) instance3.getObj();
+    }
+}
+```
+
+ <br> <br>
+ 
+- 하지만 여기서 제네릭을 사용하면 타입 캐스팅을 하지 않아도 된다.
+- 변환하여 사용할 객체의 타입을 사전에 명시하므로서 타입 캐스팅의 수고를 줄일 수 있다.
+
+ <br>
+ 
+```java
+class GenericMadPlay<T> {
+    private T obj;
+
+    public GenericMadPlay(T obj) { this.obj = obj; }
+    public T getObj() { return obj; }
+}
+
+class GenericTester {
+    public void executeMethod() {
+        GenericMadPlay<String> genericInstance1 = new GenericMadPlay<>("Hello");
+        GenericMadPlay<Integer> genericInstance2 = new GenericMadPlay<>(123);
+        GenericMadPlay<Character> genericInstance3 = new GenericMadPlay<>('a');
+
+        String genericObj1 = genericInstance1.getObj();
+        Integer genericObj2 = genericInstance2.getObj();
+        Character genericObj3 = genericInstance3.getObj();
+    }
+}
+```
+<br><br>
+
+- 제네릭 사용시 주의할 점은? <br>
+
+ 1. 제네릭은 클래스와 인터페이스만 적용되기 때문에 자바 기본 타입(Primitive Type)은 사용할 수 없다.
+
+<br>
+
+```java
+public void someMethod() {
+    List<int> intList = new List<>(); // 기본 타입 int는 사용 불가
+    List<Integer> integerList = new List<>(); // Okay!
+}
+```
+
+<br><br>
+
+ 2. 제네릭 타입을 사용하여 객체를 생성하는 것은 불가능하다. 즉, 제네릭 타입의 객체는 생성이 불가능하다. 
+
+ <br>
+
+```java
+public void someMethod() {
+    // Type parameter 'T' cannot be instantiated directly
+    T t = new T();
+    return t;
+}
+```
+
+<br><br>
+
+3. 제네릭에서는 배열에 대한 제한을 두고 있다. 제네릭 클래스 또는 인터페이스 타입의 배열을 선언할 수 없다. 하지만 제네릭 타입의 배열 선언은 허용된다.
+
+<br>
+
+```java
+public void someMethod() {
+    // generic array creation
+    // (자바 8이전) Cannot create a generic array of MadPlay<Integer>
+    MadPlay<Integer>[] arr1 = new MadPlay<>[10];
+    
+    MadPlay<Integer>[] arr2 = new MadPlay[10]; // Okay!
+}
+```
+
+ <br> <br>
+
 </div>
 </details>
 
