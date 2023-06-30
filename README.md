@@ -2454,6 +2454,8 @@ CPU는 코드영역에서 저장된 명령어를 하나씩 가져가서 처리�
 <div markdown="1">  
 <br>
 
+<br><br>
+
 1. 브라우저 주소창에 maps.google.com을 입력한다. <br>
 2. 브라우저가 maps.google.com의 IP 주소를 찾기 위해 캐시에서 DNS 기록을 확인한다.<br>
 3. 만약 요청한 URL(maps.google.com)이 캐시에 없다면, ISP의 DNS 서버가 DNS 쿼리로 maps.google.com을 호스팅하는 서버의 IP 주소를 찾는다.<br>
@@ -2462,5 +2464,8 @@ CPU는 코드영역에서 저장된 명령어를 하나씩 가져가서 처리�
 6. 서버가 요청을 처리하고 응답을 보낸다.<br>
 7. 서버가 HTTP 응답을 보낸다.<br>
 8. 브라우저가 HTML 컨텐츠를 보여준다. <br>
+
+<br><br>
+
 </div>
 </details>
