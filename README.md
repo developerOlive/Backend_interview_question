@@ -102,9 +102,23 @@ FIN패킷보다 늦게 도착하는 상황이 발생한다면 Client가 이미 �
 <summary> HTTP와 HTTPS의 차이점에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
-  
-HTTP는 따로 암호화 과정을 거치지 않기 때문에 중간에 외부에서 패킷을 가로채거나 수정할 수 있어 보안에 취약합니다. <br>
-이를 보완하기 위해 나온 것이 HTTPS입니다. 중간에 암호화 계층을 거쳐서 패킷을 암호화합니다.
+<br>
+
+HTTP는 Hyper Text Transfer Protocol의 줄임말으로써 서버와 클라이언트간에 데이터를 주고 받는 프로토콜입니다.<br>
+HTTP는 텍스트, 이미지,영상, JSON 등등 거의 모든 형태의 데이터를 전송할수 있습니다.<br>
+
+<br>
+
+- HTTP HTTPS 차이점<br>
+  - HTTPS(https://)는 SSL(Secure Socket Layer) 인증서를 사용하는 HTTP(http://)입니다.<br>
+  - SSL(또는 TLS) 인증서는 일반 HTTP 요청 및 응답을 암호화합니다.<br>
+  - 따라서 HTTPS는 HTTP보다 더 안전한 보안용 프로토콜이라고 할 수 있습니다.<br>
+  - HTTP와 HTTPS의 유일한 차이점은 HTTPS를 사용한 웹 페이지를 통해 전송되는 모든 데이터는 추가적인 보안 계층이 있습니다.<br>
+  - 이를 TLS(전송 계층 보안) 프로토콜이라고 합니다.<br>
+  - 모든 유형의 데이터는 변경되거나 손상될 수 없는 HTTPS 사이트를 통해 전달되며 제3자로부터 보호됩니다.<br>
+
+<br><br>
+
 </div>
 </details>
 
