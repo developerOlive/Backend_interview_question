@@ -381,6 +381,36 @@ ACID는 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 
 </details>
 
 
+<details>
+<summary> JDBC에 대해서 설명해주세요. </summary>
+<div markdown="1">  
+<br><br>
+
+
+JDBC란?<br>
+  - Java Database Connectivity<br>
+  - 자바언어와 DB를 연결해주는 통로와 같은 것<br>
+  - 자바를 이용한 DB접속과 SQL문장의 실행, 그리고 실행 결과로 얻어진 데이터의 핸들링을 제공하는 방법과 절차에 관한 규약<br>
+  - 자바 프로그램내에서 SQL문을 실행하기 위한 자바 API<br>
+  - SQL과 프로그래밍 언어의 통합 접근 중 한 형태<br>
+
+  <br><br>
+
+DBC의 동작 흐름 <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/f69f4c79-8171-4a07-9046-217495d635d9)
+
+<br>
+
+- JDBC는 Java 애플리케이션 내에서 JDBC API를 사용하여 데이터베이스에 접근하는 단순한 구조이다. <br>
+- JDBC API를 사용하기 위해서는 JDBC 드라이버를 먼저 로딩한 후 데이터베이스와 연결하게 된다. <br>
+
+<br><br>
+
+</div>
+</details>
+
+
 
 <details>
 <summary> 데이터베이스 풀에 대해서 설명해주세요. </summary>
