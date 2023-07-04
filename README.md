@@ -396,7 +396,7 @@ JDBC란?<br>
 
   <br><br>
 
-DBC의 동작 흐름 <br>
+[ JDBC의 동작 흐름 ] <br>
 
 ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/f69f4c79-8171-4a07-9046-217495d635d9)
 
@@ -404,6 +404,14 @@ DBC의 동작 흐름 <br>
 
 - JDBC는 Java 애플리케이션 내에서 JDBC API를 사용하여 데이터베이스에 접근하는 단순한 구조이다. <br>
 - JDBC API를 사용하기 위해서는 JDBC 드라이버를 먼저 로딩한 후 데이터베이스와 연결하게 된다. <br>
+
+<br><br>
+
+[ JDBC 드라이버 ] <br>
+
+- 데이터베이스와의 통신을 담당하는 인터페이스 <br>
+- Oracle, MS SQL, MySQL 등과 같은 데이터베이스에 알맞은 JDBC 드라이버를 구현하여 제공 <br>
+- JDBC 드라이버의 구현체를 이용해서 특정 벤더의 데이터베이스에 접근할 수 있음 <br>
 
 <br><br>
 
