@@ -415,6 +415,13 @@ JDBC란?<br>
 
 <br><br>
 
+[ JDBC API 사용 흐름] <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/40b87887-3512-4c41-9367-341b1d633823)
+
+
+<br><br>
+
 </div>
 </details>
 
