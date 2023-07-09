@@ -419,10 +419,13 @@ JDBC란?<br>
 
 ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/40b87887-3512-4c41-9367-341b1d633823)
 
-<br><br>
+<br>
 
-- JDBC 드라이버 로딩 <br> 
-  - 사용하고자 하는 JDBC 드라이버를 로딩한다. JDBC 드라이버는 DriverManager 클래스를 통해 로딩된다. <br>
+1. JDBC 드라이버 로딩 <br>
+   - 사용하고자 하는 JDBC 드라이버를 로딩한다. JDBC 드라이버는 DriverManager 클래스를 통해 로딩된다. <br>
+
+3. Connection 객체 생성 <br>
+   - JDBC 드라이버가 정상적으로 로딩되면 DriverManager를 통해 데이터베이스와 연결되는 세션(Session)인 Connection 객체를 생성한다. <br> 
 
 <br><br>
 
