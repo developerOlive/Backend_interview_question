@@ -424,9 +424,13 @@ JDBC란?<br>
 1. JDBC 드라이버 로딩 <br>
    - 사용하고자 하는 JDBC 드라이버를 로딩한다. JDBC 드라이버는 DriverManager 클래스를 통해 로딩된다. <br>
 
-3. Connection 객체 생성 <br>
+2. Connection 객체 생성 <br>
    - JDBC 드라이버가 정상적으로 로딩되면 DriverManager를 통해 데이터베이스와 연결되는 세션(Session)인 Connection 객체를 생성한다. <br> 
 
+3. Statement 객체 생성 <br>
+   - Statement 객체는 작성된 SQL 쿼리문을 실행하기 위한 객체로 정적 SQL 쿼리 문자열을 입력으로 가진다. <br>
+
+    
 <br><br>
 
 </div>
