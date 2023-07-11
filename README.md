@@ -430,6 +430,9 @@ JDBC란?<br>
 3. Statement 객체 생성 <br>
    - Statement 객체는 작성된 SQL 쿼리문을 실행하기 위한 객체로 정적 SQL 쿼리 문자열을 입력으로 가진다. <br>
 
+4. Query 실행 <br>
+   - 생성된 Statement 객체를 이용하여 입력한 SQL 쿼리를 실행한다. <br>
+
     
 <br><br>
 
