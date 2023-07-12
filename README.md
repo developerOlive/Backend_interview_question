@@ -433,6 +433,8 @@ JDBC란?<br>
 4. Query 실행 <br>
    - 생성된 Statement 객체를 이용하여 입력한 SQL 쿼리를 실행한다. <br>
 
+5. ResultSet 객체로부터 데이터 조회
+   - 실행된 SQL 쿼리문에 대한 결과 데이터 셋이다. <br>
     
 <br><br>
 
