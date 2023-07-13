@@ -433,8 +433,11 @@ JDBC란?<br>
 4. Query 실행 <br>
    - 생성된 Statement 객체를 이용하여 입력한 SQL 쿼리를 실행한다. <br>
 
-5. ResultSet 객체로부터 데이터 조회
+5. ResultSet 객체로부터 데이터 조회 <br>
    - 실행된 SQL 쿼리문에 대한 결과 데이터 셋이다. <br>
+
+6. ResultSet, Statement, Connection 객체들의 Close <br>
+   - JDBC API를 통해 사용된 객체들은 생성된 객체들을 사용한 순서의 역순으로 Close 한다. <br>
     
 <br><br>
 
