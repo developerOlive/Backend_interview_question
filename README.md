@@ -447,7 +447,7 @@ JDBC란?<br>
 
 
 <details>
-<summary> 데이터베이스 풀에 대해서 설명해주세요. </summary>
+<summary> 커넥션 풀에 대해서 설명해주세요. </summary>
 <div markdown="1">  
 <br>
   
@@ -468,19 +468,32 @@ JDBC란?<br>
   <br>
   
 - Connction이 부족하면? <br>
-  - 모든 요청이 DB에 접근하고 있고 남은 Conncetion이 없다면, 해당 클라이언트는 대기 상태로 전환시키고 Pool에 Connection이 반환되면 대기 상태에 있는 클라이언트에게 순차적으로 제공된다. <br>
+  - 모든 요청이 DB에 접근하고 있고 남은 Conncetion이 없다면, 해당 클라이언트는 대기 상태로 전환시키고
+  - Pool에 Connection이 반환되면 대기 상태에 있는 클라이언트에게 순차적으로 제공된다. <br>
+  <br>
+  
 - 왜 사용할까? <br>
   - 매 연결마다 Connection 객체를 생성하고 소멸시키는 비용을 줄일 수 있다. <br>
   - 미리 생성된 Connection 객체를 사용하기 때문에, DB 접근 시간이 단축된다. <br>
   - DB에 접근하는 Connection의 수를 제한하여, 메모리와 DB에 걸리는 부하를 조정할 수 있다. <br>
+  - JDBC API를 사용하여 데이터베이스와 연결하기 위해 Connection 객체를 생성하는 작업은 비용이 많이 드는 작업 중 하나이다.
+    - 커넥션 객체를 생성하는 과정
+      - 애플리케이션에서 DB 드라이버를 통해 커넥션을 조회한다.
+      - DB 드라이버는 DB와 TCP/IP 커넥션을 연결한다. (3 way handshake와 같은 네트워크 연결 동작 발생)
+<br>
+
 - Thread Pool <br>
   - 비슷한 맥락으로 Thread pool이라는 개념도 있다. <br>
   - 이 역시 매 요청마다 요청을 처리할 Thread를 만드는것이 아닌, 미리 생성한 pool 내의 Thread를 소멸시키지 않고 재사용하여 효율적으로 자원을 활용하는 기법. <br>
+<br>
+
 - Thread Pool과 Connection pool <br>
   - WAS에서 Thread pool과 Connection pool내의 Thread와 Connection의 수는 직접적으로 메모리와 관련이 있기 때문에, <br>
-  많이 사용하면 할 수록 메모리를 많이 점유하게 된다. 그렇다고 반대로 메모리를 위해 적게 지정한다면, 서버에서는 많은 요청을 처리하지 못하고 대기 할 수 밖에 없다. <br>
+  많이 사용하면 할 수록 메모리를 많이 점유하게 된다. <br>
+  - 그렇다고 반대로 메모리를 위해 적게 지정한다면, 서버에서는 많은 요청을 처리하지 못하고 대기 할 수 밖에 없다. <br>
   - 보통 WAS의 Thread의 수가 Conncetion의 수보다 많은 것이 좋은데, 그 이유는 모든 요청이 DB에 접근하는 작업이 아니기 때문이다. <br>
-  
+
+  <br><br>
   
 </div>
 </details>
