@@ -1,4 +1,4 @@
-# Backend_interview_question  
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/dbe95433-b8d1-4b5e-95f1-ba3cda0b58d7)# Backend_interview_question  
 
 ## [ CS 관련 내용 ]  
 
@@ -491,7 +491,15 @@ JDBC란?<br>
 미리 준비된 Connection 객체를 사용하여 애플리케이션의 성능을 향상하는 커넥션 풀(Connection Pool)이 등장하게 된다.<br>
 Connection 객체를 미리 생성하여 보관하고 애플리케이션이 필요할 때 꺼내서 사용할 수 있도록 관리해 주는 것이 Connection Pool이다.<br>
 
-<br>
+<br><br>
+
+- 커넥션 풀 동작 구조<br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/59b16e01-f2b0-4f6f-a485-0f9cf9511912)
+
+
+
+<br><br>
 
 - Thread Pool <br>
   - 비슷한 맥락으로 Thread pool이라는 개념도 있다. <br>
