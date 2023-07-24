@@ -1,4 +1,4 @@
-![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/dbe95433-b8d1-4b5e-95f1-ba3cda0b58d7)# Backend_interview_question  
+# Backend_interview_question  
 
 ## [ CS 관련 내용 ]  
 
@@ -497,6 +497,7 @@ Connection 객체를 미리 생성하여 보관하고 애플리케이션이 필�
 
 ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/59b16e01-f2b0-4f6f-a485-0f9cf9511912)
 
+1. 애플리케이션을 시작하는 시점에 커넥션 풀은 필요한 만큼 커넥션을 미리 생성하여 보관한다.<br>
 
 
 <br><br>
