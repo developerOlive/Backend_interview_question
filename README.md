@@ -498,6 +498,7 @@ Connection 객체를 미리 생성하여 보관하고 애플리케이션이 필�
 ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/59b16e01-f2b0-4f6f-a485-0f9cf9511912)
 
 1. 애플리케이션을 시작하는 시점에 커넥션 풀은 필요한 만큼 커넥션을 미리 생성하여 보관한다.<br>
+2. 서비스의 특징과 스펙에 따라 생성되는 Connection 객체의 개수는 다르지만 일반적으로 기본값으로 10개를 생성한다.<br>
 
 
 <br><br>
