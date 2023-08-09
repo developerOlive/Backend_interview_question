@@ -1190,9 +1190,50 @@ public void someMethod() {
 <details>
 <summary> OOP의 4가지 특징에 대해서 설명해주세요. </summary>
 <div markdown="1">  
+<br><br>
+
+  
+## 1. 추상화(Abstraction) <br>
+  - 객체의 공통적인 속성과 기능을 추출하여 정의하는것 <br> <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/42e4ea2a-a16a-4462-8a95-849bbd9c38be)
+
+
+- 자동차와 오토바이는 모두 이동 수단이며 모든 이동 수단은 전진과 후진을 할 수 있다는 공통점을 가집니다.<br>
+- 이것을 자바 문법 요소를 사용하여 표현하면, 자동차와 오토바이라는 하위 클래스(sub-class)들의 공통적인 기능(전진과 후진)을 추출하여 이동 수단 이라는 상위 클래스(super class)에 정의했습니다. <br><br>
+
+- 자바에서 추상화를 구현할 수 있는 문법 요소로는 추상 클래스(abstract class)와 인터페이스(interface)가 있는데,<br>
+- 이번 예제에서는 가장 빈번하게 사용되는 인터페이스를 사용해보겠습니다.<br><br>
+
+[Vehicle 인터페이스] <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/ef98a121-5815-450f-8661-df5bb791f6a7)
+
+- 가장 먼저 자동차와 오토바이의 공통적인 기능 추출하여 이동 수단 인터페이스에 정의합니다.<br>
+- 인터페이스에는 추상 메서드나 상수를 통해서 어떤 객체가 수행해야 하는 핵심적인 역할만을 규정해두고,<br>
+- 실제적인 구현은 해당 인터페이스를 구현하는 각각의 객체들에서 하도록 프로그램을 설계하는 것을 의미합니다.<br><br>
+
+[Car 클래스] <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/efdabb8f-055e-49f1-98ce-41309de5eda5)
+
+<br><br>
+
+[MotorBike 클래스] <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/2fc112f6-acb5-4633-8814-a7095e7f02cb)
+
 <br>
-1. 추상화(Abstraction) <br>
-  - 구체적인 사물들의 공통적인 특징을 파악해서 이를 하나의 개념(집합)으로 다루는 것 <br> <br>
+
+- 각각 클래스 모두 전진과 후진의 기능을 공통적으로 가지지만,<br>
+- 차는 차의 시동을 걸어야 하고, 오토바이는 오토바이의 시동을 걸어야 하기 때문에 그 구현은 각 클래스에 따라 달라야 할 것입니다.<br>
+- 객체 지향 프로그래밍에서는 보다 유연하고 변경에 열려있는 프로그램을 설계하기 위해 역할과 구현을 분리하는데,<br>
+- 여기서 역할에 해당하는 부분이 인터페이스를 통해 추상화될 수 있습니다.<br>
+
+<br><br>
+
+https://www.codestates.com/blog/content/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95
+  
 2.캡슐화(Encapsulation) <br>
 - 정보 은닉(information hiding): 필요가 없는 정보는 외부에서 접근하지 못하도록 제한하는 것 <br> 
 - 높은 응집도, 낮은 결합도를 유지하여 유연함과 유지보수성 증가 <br> <br>
@@ -1200,7 +1241,11 @@ public void someMethod() {
 - 여러 개체들이 가진 공통된 특성을 부각시켜 하나의 개념이나 법칙으로 성립시키는 과정 <br> <br>
 4. 다형성(Polymorphism) <br>
 - 서로 다른 클래스의 객체가 같은 메시지를 받았을 때 각자의 방식으로 동작하는 능력 <br>
-- 오버라이딩(Overriding), 오버로딩(Overloading) <br>
+- 오버라이딩(Overriding), 오버로딩(Overloading)
+
+
+<br>
+<br>
 </div>
 </details>
 
