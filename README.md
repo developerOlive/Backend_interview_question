@@ -1205,7 +1205,7 @@ public void someMethod() {
 - 자바에서 추상화를 구현할 수 있는 문법 요소로는 추상 클래스(abstract class)와 인터페이스(interface)가 있는데,<br>
 - 이번 예제에서는 가장 빈번하게 사용되는 인터페이스를 사용해보겠습니다.<br><br>
 
-[Vehicle 인터페이스] <br>
+[ Vehicle 인터페이스 ] <br>
 
 ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/ef98a121-5815-450f-8661-df5bb791f6a7)
 
@@ -1213,13 +1213,13 @@ public void someMethod() {
 - 인터페이스에는 추상 메서드나 상수를 통해서 어떤 객체가 수행해야 하는 핵심적인 역할만을 규정해두고,<br>
 - 실제적인 구현은 해당 인터페이스를 구현하는 각각의 객체들에서 하도록 프로그램을 설계하는 것을 의미합니다.<br><br>
 
-[Car 클래스] <br>
+[ Car 클래스 ] <br>
 
 ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/efdabb8f-055e-49f1-98ce-41309de5eda5)
 
 <br><br>
 
-[MotorBike 클래스] <br>
+[ MotorBike 클래스 ] <br>
 
 ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/2fc112f6-acb5-4633-8814-a7095e7f02cb)
 
@@ -1232,16 +1232,69 @@ public void someMethod() {
 
 <br><br>
 
+
+## 2. 상속(Inheritance) <br>
+  - 기존의 클래스를 재활용하여 새로운 클래스를 작성하는 자바의 문법 요소 <br> <br>
+
+  ![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/e8580981-fb87-4b75-a973-f465f6740e62)
+
+ <br>
+
+- 위의 그림을 보면 자동차와 오토바이가 있고, 각각의 기능과 속성들이 명시되어 있습니다.  <br>
+- 이 중에서 빨간색으로 표시된 속성과 기능들은 자동차와 오토바이의 공통적인 부분들이고,  <br>
+  - 푸른색으로 표시된 부분들은 그렇지 않은 부분들입니다. <br> <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/e47f36b2-f360-48ed-a0d2-402112fd3f6a)
+
+ <br>
+ 
+각각의 클래스마다 속성으로 model, color, wheels  <br>
+기능으로 moveForward()와 moveBackward 가 완전히 동일한 코드임에도 불구하고 계속 반복될 수 있습니다.  <br>
+
+또한 하나의 코드에서 변경 사항이 일어나면, 해당 코드의 변경 사항을 다른 클래스에서도 일일이 수정해주어야 하는 어려움이 있습니다. <br>
+
+그러면 이제 앞서 설명했던 추상화와 상속을 활용하여 앞선 코드를 재정의해보도록 하겠습니다. <br> <br> <br>
+
+
+[ Vehicle 클래스 ] <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/b45ec901-a8ae-4222-b612-56acf6de0c3e)
+
+
+[ Car 클래스 ] <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/09af11bc-52a1-4dbc-b799-679607d8230c)
+
+
+[ MotorBike 클래스 ] <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/b60bf225-d165-4ac3-b045-5b4ec01055e4)
+
+[ Main 실행 클래스 ]  <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/0fe8da8d-41ea-41f4-99e2-778b5063ebee)
+
+<br><br>
+
+- 위의 코드 예제를 보면, Car 와 MotorBike 클래스의 공통적인 속성과 기능들을 추출(추상화)하여 Vehicle클래스(상위 클래스)에 정의하였고,<br>
+extends 키워드를 통해 각각의 하위 클래스로 확장하여 해당 기능과 속성들을 매번 반복적으로 정의해야 하는 번거로움을 제거했습니다. <br>
+
+- 또한, 공통적인 코드의 변경이 있는 경우 상위 클래스에서 단 한 번의 수정으로 모든 클래스에 변경 사항이 반영될 수 있도록 만들었습니다.<br>
+
+- 참고로, MotorBike 클래스에서 확인할 수 있듯이, 상위 클래스의 기능과 속성들을 그대로 사용할 수도 있지만, <br>
+각각의 클래스의 맥락에 맞게 메서드 오버라이딩(method overriding)을 사용하여 내용을 재정의할 수도 있습니다.<br>
+
+- 사실 이 부분이 앞서 추상화에서 봤었던 인터페이스를 통한 구현과 상속을 구분하는 핵심적인 차이 중에 하나라 할 수 있습니다. <br>
+즉, 양자 모두 상위 클래스-하위 클래스의 관계를 전제하면서 공통적인 속성과 기능을 공유할 수 있지만, <br>
+상속의 경우 상위 클래스의 속성과 기능들을 하위 클래스에서 그대로 받아 사용하거나 오버라이딩을 통해 선택적으로 재정의하여 사용할 수 있는 반면, <br>
+인터페이스를 통한 구현은 반드시 인터페이스에 정의된 추상 메서드의 내용이 하위 클래스에서 정의되어야 합니다.<br>
+
+- 결론적으로, 상속 관계의 경우 인터페이스를 사용하는 구현에 비해 추상화의 정도가 낮다고 할 수 있습니다. <br>
+인터페이스가 역할에 해당하는 껍데기만 정의해두고, 하위 클래스에서 구체적인 구현을 하도록 강제하는 것에 비해<br>
+상속 관계의 경우 상황에 따라 모든 구체적인 내용들을 정의해두고 하위 클래스에서는 그것을 단순히 가져다가 재사용할 수 있습니다.<br><br>
+
+
 https://www.codestates.com/blog/content/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95
-  
-2.캡슐화(Encapsulation) <br>
-- 정보 은닉(information hiding): 필요가 없는 정보는 외부에서 접근하지 못하도록 제한하는 것 <br> 
-- 높은 응집도, 낮은 결합도를 유지하여 유연함과 유지보수성 증가 <br> <br>
-3. 일반화 관계(Inheritance, 상속) <br>
-- 여러 개체들이 가진 공통된 특성을 부각시켜 하나의 개념이나 법칙으로 성립시키는 과정 <br> <br>
-4. 다형성(Polymorphism) <br>
-- 서로 다른 클래스의 객체가 같은 메시지를 받았을 때 각자의 방식으로 동작하는 능력 <br>
-- 오버라이딩(Overriding), 오버로딩(Overloading)
 
 
 <br>
