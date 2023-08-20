@@ -1353,6 +1353,17 @@ extends 키워드를 통해 각각의 하위 클래스로 확장하여 해당 �
 ## 4. 캡슐화(Encapsulation) <br>
   - 클래스 안에 서로 연관있는 속성과 기능들을 하나의 캡슐(capsule)로 만들어 데이터를 외부로부터 보호하는 것 <br> <br>
 
+1. 데이터 보호(data protection) – 외부로부터 클래스에 정의된 속성과 기능들을 보호<br>
+2. 데이터 은닉(data hiding) – 내부의 동작을 감추고 외부에는 필요한 부분만 노출<br><br>
+
+
+자바 객체 지향 프로그래밍에서 캡슐화를 구현하기 위한 방법은 크게 두 가지가 있습니다. <br>
+먼저는 접근제어자(access modifiers)를 활용하는 것입니다.<br>
+접근제어자는 클래스 또는 클래스의 내부의 멤버들에 사용되어 해당 클래스나 멤버들을 외부에서 접근하지 못하도록 접근을 제한하는 역할을 합니다. <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/dc14d4d3-f855-4487-a5c0-d64786baa0f0)
+
+
 
 
 https://www.codestates.com/blog/content/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95
