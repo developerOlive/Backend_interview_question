@@ -1365,10 +1365,6 @@ extends 키워드를 통해 각각의 하위 클래스로 확장하여 해당 �
 
 
 
-
-https://www.codestates.com/blog/content/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95
-
-
 <br>
 <br>
 </div>
