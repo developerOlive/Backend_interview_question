@@ -1666,16 +1666,20 @@ public class Test {
 <details>
 <summary> 자바의 메모리 영역에 대해서 설명해주세요. </summary>
 <div markdown="1">  
-<br>
+<br><br>
 
-- 메서드 영역<br>
-  - static 변수, 전역 변수, 코드에서 사용되는 Class 정보 등이 할당된다.<br>
+- 자바 프로그램이 실행되면 JVM(자바 가상 머신)은 OS로부터 메모리를 할당받고,<br>
+  - 그 메모리를 용도에 따라서 여러 영역으로 나누어 관리를 한다.<br>
 
-- 스택(Stack)<br>
-  - 지역 변수, 함수(메서드) 등이 할당되는 LIFO(Last In First Out) 방식의 메모리이다.<br>
+- JVM의 메모리 공간(Runtime Data Area)은 크게 Method(Static) 영역, Stack 영역, Heap 영역으로 구분되고
+  - 데이터 타입(자료형)에 따라 각 영역에 나눠서 할당 되게 된다.
+ 
+<br><br>
 
-- 힙(Heap)<br>
-    - new 연산자를 통한 동작할당된 객체들이 저장되며, 가비지 컬렉션에 의해 메모리가 관리된다.<br>
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/108cfc7b-e99e-4d30-870e-4d7ea7677d2d)
+
+
+https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EB%B3%B4%EB%8A%94-%EC%9E%90%EB%B0%94-%EC%BD%94%EB%93%9C%EC%9D%98-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD%EC%8A%A4%ED%83%9D-%ED%9E%99
 
 </div>
 </details>
