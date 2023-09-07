@@ -2215,6 +2215,9 @@ Filter, Interceptor 차이점 요약 <br>
 <summary> 운영 체제가 무엇인지 설명해주세요. </summary>
 <div markdown="1">  
 <br>
+
+![image](https://github.com/developerOlive/Backend_interview_question/assets/67456294/7d17dd00-dc91-4432-a0dd-b3b92d54cc06)
+
   
 - 운영체제(Operating System)는 컴퓨터 시스템의 하드웨어, 소프트웨어적인 자원들을 효율적으로 운영 및 관리함으로써 <br>
 사용자가 컴퓨터를 편리하고 효과적으로 사용할 수 있도록 하는 시스템 소프트웨어입니다. <br>
