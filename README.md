@@ -1688,6 +1688,14 @@ public class Test {
 
 <br><br>
 
+각 변수의 생성시기는 아래와 같다.
+
+- 클래스변수 : 클래스가 메모리에 올라갈 때
+- 인스턴스변수 : 인스턴스가 생성되었을 때
+- 지역변수 / 매개변수 : 위치하고 있는 메서드가 수행되었을 때
+
+<br><br>
+
 https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EB%B3%B4%EB%8A%94-%EC%9E%90%EB%B0%94-%EC%BD%94%EB%93%9C%EC%9D%98-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD%EC%8A%A4%ED%83%9D-%ED%9E%99
 
 </div>
