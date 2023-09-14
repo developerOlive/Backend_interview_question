@@ -1696,7 +1696,18 @@ public class Test {
 
 <br><br>
 
+# Method(Static) 영역<br>
+- JVM이 동작해서 클래스가 로딩될 때 생성.<br>
+- JVM이 읽어들인 클래스와 인터페이스 대한 런타임 상수 풀, 멤버 변수(필드), 클래스 변수(Static 변수), 상수(final), 생성자(constructor)와 메소드(method) 등을 저장하는 공간.<br>
+- Method(Static) 영역에 있는 것은 어느곳에서나 접근 가능<br>
+- Method(Static) 영역의 데이터는 프로그램의 시작부터 종료가 될 때까지 메모리에 남아있다.<br>
+  - 그래서 static 메모리에 있는 데이터들은 프로그램이 종료될 때까지 어디서든 사용이 가능하다.<br>
+  - 그러나 static 데이터를 무분별하게 많이 사용할 경우 메모리 부족 현상이 일어날수 있게 된다.<br>
+
+<br><br>
+
 https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EB%B3%B4%EB%8A%94-%EC%9E%90%EB%B0%94-%EC%BD%94%EB%93%9C%EC%9D%98-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%98%81%EC%97%AD%EC%8A%A4%ED%83%9D-%ED%9E%99
+
 
 </div>
 </details>
